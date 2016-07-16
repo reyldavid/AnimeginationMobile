@@ -1,0 +1,86 @@
+<!--<h2 (click) = "OnHome()" >
+    Animegination
+</h2>-->
+<!--<productsList *ngIf="selectedProduct == null" (productSelected)="selectedProduct = $event" ></productsList>
+<product *ngIf="selectedProduct != null" [product]="selectedProduct" ></product>-->
+
+<div class="body-bg-white">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-lg-6">
+            <a class="navbar-brand" [routerLink]="['Home']">
+                <img src="https://reydavid.blob.core.windows.net/assets/Animegination-brand.PNG"
+                     alt="Animegination" height="20" />
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-lg-6">
+            <div class="input-group padding-top-8 padding-right-15">
+                <input type="text" class="form-control" placeholder="Search the Store" #inSearch />
+                <span class="input-group-btn image-btn">
+                    <button class="btn btn-default" type="button" (click)="onSearch(inSearch.value)">
+                        <img src="https://reydavid.blob.core.windows.net/assets/Search2.png" alt="Search" height="32" />
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header pull-left">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
+                        data-target="#main-menu-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-header pull-right">
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a [routerLink]="['Cart']" class="image-link">
+                            <img src="https://reydavid.blob.core.windows.net/assets/menu-cart.png"
+                                 alt="Shopping Cart" height="46" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            Features
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a [routerLink]="['Slice', { listTypeID: 1 }]">Featured Titles</a></li>
+                            <li><a [routerLink]="['Slice', { listTypeID: 3 }]">Top Sellers</a></li>
+                            <li><a [routerLink]="['Slice', { listTypeID: 2 }]">New Items</a></li>
+                            <li><a [routerLink]="['Slice', { listTypeID: 5 }]">Close Out</a></li>
+                            <li><a [routerLink]="['Slice', { listTypeID: 4 }]">Bargain Bin</a></li>
+                            <li><a [routerLink]="['Slice', { listTypeID: 6 }]">Live Action</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a [routerLink]="['News']">Recent News</a></li>
+                        </ul>
+                    </li>
+                    <li><a [routerLink]="['Categories']">Shop by Category</a></li>
+                    <li><a [routerLink]="['Contact']">Contact Us</a></li>
+                    <!--<li (click)="OnLiClick('about')"><a href="#">About Us</a></li>-->
+                    <li><a [routerLink]="['About']">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a [routerLink]="['Login']">Sign in</a></li>
+                    <li><a [routerLink]="['Register']">Register</a></li>
+                    <li><a [routerLink]="['Orders']">Your Orders</a></li>
+                    <li><a [routerLink]="['AccountInfo']">Your Account</a></li>
+                    <li><a [routerLink]="['Settings']">Your Settings</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <router-outlet></router-outlet>
+</div>

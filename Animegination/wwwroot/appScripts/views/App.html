@@ -1,0 +1,5 @@
+<h2>
+    Animegination
+</h2>
+<productsList *ngIf="selectedProduct == null" (productSelected)="selectedProduct = $event" ></productsList>
+<product *ngIf="selectedProduct != null" [product]="selectedProduct" ></product>

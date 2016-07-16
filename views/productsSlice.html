@@ -1,0 +1,8 @@
+<h2>Your {{listType.Description}}</h2>
+<ul>
+    <li *ngFor="#prod of apiProducts"
+        (click)="OnSelectProduct(prod)">
+        {{prod?.ProductTitle}} <br />
+        {{prod?.YourPrice | currency:'USD':true }}
+    </li>
+</ul>

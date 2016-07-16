@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>a53b3292-5b7f-4f3c-aebc-47df31e7b9b2</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App_Resources\Android\drawable-hdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-hdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-ldpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-mdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-xhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-xxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-land-xxxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-ldpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-mdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-xhdpi\icon.png" />
+    <Content Include="App_Resources\Android\drawable-xhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-xxhdpi\icon.png" />
+    <Content Include="App_Resources\Android\drawable-xxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\Android\drawable-xxxhdpi\icon.png" />
+    <Content Include="App_Resources\Android\drawable-xxxhdpi\splashscreen.png" />
+    <Content Include="App_Resources\WP8\SplashScreenImage.screen-720p.jpg" />
+    <Content Include="App_Resources\WP8\SplashScreenImage.screen-WVGA.jpg" />
+    <Content Include="css\custom.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\K-ON 2732.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2-polyfills.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2.dev.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\bootstrap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\bootstrap.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\es6-shim.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\es6-shim.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\http.dev.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\http.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\jquery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\router.dev.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\router.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\Rx.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\shims_for_IE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-csp-production.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-csp-production.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-csp-production.src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-polyfills.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-polyfills.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-polyfills.src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-register-only.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-register-only.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system-register-only.src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\system.src.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\whitelist.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\app.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\boot.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\customers\aboutUs.component.js" />
+    <Content Include="scripts\customers\accountInfo.component.js" />
+    <Content Include="scripts\customers\accountSettings.component.js" />
+    <Content Include="scripts\customers\contactUs.component.js" />
+    <Content Include="scripts\customers\login.component.js" />
+    <Content Include="scripts\customers\newsFeed.component.js" />
+    <Content Include="scripts\customers\orders.component.js" />
+    <Content Include="scripts\customers\register.component.js" />
+    <Content Include="scripts\customers\shoppingCart.component.js" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\models\category.js" />
+    <Content Include="scripts\models\listing.js" />
+    <Content Include="scripts\models\listtype.js" />
+    <Content Include="scripts\models\medium.js" />
+    <Content Include="scripts\models\product.js" />
+    <Content Include="scripts\models\publisher.js" />
+    <Content Include="scripts\models\rating.js" />
+    <Content Include="scripts\models\userprofile.js" />
+    <Content Include="scripts\products\categories.component.js" />
+    <Content Include="scripts\products\categoryList.component.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\products\home.component.js" />
+    <Content Include="scripts\products\product.component.js" />
+    <Content Include="scripts\products\products.offline.js" />
+    <Content Include="scripts\products\productsList.component.js" />
+    <Content Include="scripts\products\productsSlice.component.js" />
+    <Content Include="scripts\products\searchResults.component.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\products\similarsList.component.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\products\views\aboutUs.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\products\views\accountInfo.html" />
+    <Content Include="scripts\products\views\accountSettings.html" />
+    <Content Include="scripts\products\views\App.html" />
+    <Content Include="scripts\products\views\categories.html" />
+    <Content Include="scripts\products\views\contactUs.html" />
+    <Content Include="scripts\products\views\home.html" />
+    <Content Include="scripts\products\views\login.html" />
+    <Content Include="scripts\products\views\newsFeed.html" />
+    <Content Include="scripts\products\views\orders.html" />
+    <Content Include="scripts\products\views\product.html" />
+    <Content Include="scripts\products\views\productsList.html" />
+    <Content Include="scripts\products\views\productsSlice.html" />
+    <Content Include="scripts\products\views\register.html" />
+    <Content Include="scripts\products\views\searchResults.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\products\views\shoppingCart.html" />
+    <Content Include="scripts\products\views\similarsList.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\services\anime.api.service.js" />
+    <Content Include="scripts\services\product.service.js" />
+    <Content Include="views\aboutUs.html" />
+    <Content Include="views\accountInfo.html" />
+    <Content Include="views\accountSettings.html" />
+    <Content Include="views\App.html" />
+    <Content Include="views\categories.html" />
+    <Content Include="views\categoryList.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\contactUs.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\newsFeed.html" />
+    <Content Include="views\orders.html" />
+    <Content Include="views\product.html" />
+    <Content Include="views\productsList.html" />
+    <Content Include="views\productsSlice.html" />
+    <Content Include="views\register.html" />
+    <Content Include="views\searchResults.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\shoppingCart.html" />
+    <Content Include="views\similarsList.html">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include=".abignore" />
+    <Content Include=".abproject" />
+    <Content Include=".debug.abproject" />
+    <Content Include=".release.abproject" />
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\index.css" />
+    <Content Include="img\Animegination-thumbnail.png" />
+    <Content Include="img\cordova.png" />
+    <Content Include="img\cordova_orig.png" />
+    <Content Include="img\Jibun_Advent 1024.png" />
+    <Content Include="img\K-ON 2208.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo_orig.png" />
+    <Content Include="index.html" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-1366@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait-1366@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-40@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-60@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-83.5@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\iOS\watch-172x172.png" />
+    <Resource Include="App_Resources\iOS\watch-196x196.png" />
+    <Resource Include="App_Resources\iOS\watch-48x48.png" />
+    <Resource Include="App_Resources\iOS\watch-55x55.png" />
+    <Resource Include="App_Resources\iOS\watch-58x58.png" />
+    <Resource Include="App_Resources\iOS\watch-80x80.png" />
+    <Resource Include="App_Resources\iOS\watch-87x87.png" />
+    <Resource Include="App_Resources\iOS\watch-88x88.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Assets\BadgeLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\Logo.png" />
+    <Resource Include="App_Resources\WP8\Assets\SplashScreen.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile150x150.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile71x71.png" />
+    <Resource Include="App_Resources\WP8\Assets\StoreLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\WideLogo.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <TypeScriptCompile Include="scripts\typings\cordova\cordova.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Camera.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Camera.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Contacts.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Contacts.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Device.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Device.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceMotion.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceMotion.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceOrientation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceOrientation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Dialogs.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Dialogs.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileSystem.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileSystem.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileTransfer.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileTransfer.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Globalization.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Globalization.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\InAppBrowser.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\InAppBrowser.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Media.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Media.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\MediaCapture.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\MediaCapture.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\NetworkInformation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\NetworkInformation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Push.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Push.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Splashscreen.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Splashscreen.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Vibration.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Vibration.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\WebSQL.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\WebSQL.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\simulator.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-land-xxxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\Android\drawable-xhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xxhdpi\" />
+    <Folder Include="App_Resources\Android\drawable-xxxhdpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Assets\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="css\" />
+    <Folder Include="img\" />
+    <Folder Include="libs\" />
+    <Folder Include="scripts\customers\" />
+    <Folder Include="scripts\models\" />
+    <Folder Include="scripts\products\views\" />
+    <Folder Include="scripts\typings\cordova\" />
+    <Folder Include="scripts\typings\cordova\plugins\" />
+    <Folder Include="scripts\typings\" />
+    <Folder Include="scripts\services\" />
+    <Folder Include="scripts\products\" />
+    <Folder Include="views\" />
+    <Folder Include="scripts\" />
+    <Folder Include="Plugins\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!--
+    TODO: Uncomment this code if you need to customize the build process.
+    <Target Name="BeforeBuild">
+        <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+    </Target>
+
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+</Project>

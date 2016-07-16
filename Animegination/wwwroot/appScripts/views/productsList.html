@@ -1,0 +1,8 @@
+<h2>Your recommendations</h2>
+<ul>
+    <li *ngFor="#product of products"
+        (click)="OnSelectProduct(product)">
+        {{product.producttitle}} <br/>
+        {{product.yourprice | currency:'USD':true }}
+    </li>
+</ul>

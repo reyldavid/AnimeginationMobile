@@ -1,0 +1,64 @@
+﻿.body-bg-white {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: #FF8201;
+}
+.h1, .h2, .h3, .h4 {
+    margin-top: 10px;
+    color: #FF8201;
+}
+.anime-color {
+    color: #FF8201;
+}
+.bg-lightgray {
+    background-color: #eee;
+}
+.padding-top-8 {
+    padding-top: 8px;
+}
+.padding-top-15 {
+    padding-top: 15px;
+}
+.padding-right-15 {
+    padding-right: 15px;
+}
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+.padding-left-30 {
+    padding-left: 30px;
+}
+.margin-bottom-0 {
+    margin-bottom: 0px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.font-size-18 {
+    font-size: 18px;
+}
+.fine-print {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+.small-gray {
+    font-size: 10px;
+    color: gray;
+}
+.clear-both {
+    clear: both;
+}
+.image-btn > .btn {
+    padding: 0px;
+}
+li > a.image-link {
+    padding: 2px 15px 2px 30px;
+}
+.navbar-nav > li > a {
+    font-weight: bold;
+}

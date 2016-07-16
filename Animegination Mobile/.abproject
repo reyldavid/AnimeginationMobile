@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Animegination_Mobile",
+  "ProjectGuid": "a53b3292-5b7f-4f3c-aebc-47df31e7b9b2",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.AnimeginationMobile",
+  "DisplayName": "Animegination",
+  "Author": "Rey David",
+  "Description": "Animegination Mobile",
+  "BundleVersion": "1.1",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{ce6a355f-4e79-4a59-8a3a-a2008e84f4ed}",
+  "WP8ProductID": "{3cc5ccc6-1c3c-481d-887a-2cd8b00d8612}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.AnimeginationMobile",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
