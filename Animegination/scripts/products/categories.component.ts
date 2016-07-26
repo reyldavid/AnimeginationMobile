@@ -1,9 +1,9 @@
-﻿import {Component} from 'angular2/core';
+﻿import {Component} from '@angular/core';
 import {Category} from '../models/category';
 import {ProductService} from '../services/product.service';
 import {ApiService} from '../services/anime.api.service';
-import {OnInit} from 'angular2/core';
-import {Router, RouteParams} from 'angular2/router';
+import {OnInit} from '@angular/core';
+import {Router, RouteParams} from '@angular/router-deprecated';
 
 @Component({
     selector: 'categories',

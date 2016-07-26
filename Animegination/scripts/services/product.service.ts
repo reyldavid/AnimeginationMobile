@@ -1,4 +1,4 @@
-﻿import {Injectable} from 'angular2/core';
+﻿import {Injectable} from '@angular/core';
 import {PRODUCTS} from '../products/products.offline';
 import {ApiProduct} from '../models/product';
 import {Category} from '../models/category';

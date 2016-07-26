@@ -23,10 +23,11 @@
     <script src="libs/router.dev.js"></script>
     <script src="libs/http.dev.js"></script>
     <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/Reflect.js"></script>
     <script src="libs/whitelist.js"></script>
     <base href="/" />
     <!-- 2. Configure SystemJS -->
-    <script>
+    <!--<script>
         System.config({
             packages: {
                 appScripts: {
@@ -34,18 +35,21 @@
                 }
             }
         });
-    </script>
+    </script>-->
+    <script src="systemjs.config.js"></script>
     <script>
+        System.import('app/boot')
+            .then(null, console.error.bind(console))
+            .catch(function (err)
+                { console.log(err); });
+    </script>
+    <!--<script>
         System.import('appScripts/boot')
         .then(null, console.error.bind(console));
-    </script>
+    </script>-->
 </head>
 <body>
     <aya-app>
-        <!--<a href="#">
-            <img src="https://reydavid.blob.core.windows.net/assets/Animegination-thumbnail.png"
-                 alt="Animegination" />
-        </a>-->
         <h1>Loading...</h1>
     </aya-app>
 </body>

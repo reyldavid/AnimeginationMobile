@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
+var core_1 = require('@angular/core');
 var product_service_1 = require('../services/product.service');
 var anime_api_service_1 = require('../services/anime.api.service');
-var router_1 = require('angular2/router');
+var router_deprecated_1 = require('@angular/router-deprecated');
 var similarsList_component_1 = require('./similarsList.component');
 var ProductComponent = (function () {
     function ProductComponent(_routeParams, _productService) {
@@ -37,7 +37,7 @@ var ProductComponent = (function () {
             directives: [similarsList_component_1.SimilarsListComponent],
             inputs: ["product"]
         }), 
-        __metadata('design:paramtypes', [router_1.RouteParams, product_service_1.ProductService])
+        __metadata('design:paramtypes', [router_deprecated_1.RouteParams, product_service_1.ProductService])
     ], ProductComponent);
     return ProductComponent;
 }());

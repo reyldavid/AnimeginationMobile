@@ -1,10 +1,10 @@
-﻿import {Component} from 'angular2/core';
+﻿import {Component} from '@angular/core';
 import {ApiProduct} from '../models/product';
 import {ProductService} from '../services/product.service';
 import {ApiService} from '../services/anime.api.service';
-import {OnInit} from 'angular2/core';
-import {Router} from 'angular2/router';
-import {RouteParams} from 'angular2/router';
+import {OnInit} from '@angular/core';
+import {Router} from '@angular/router-deprecated';
+import {RouteParams} from '@angular/router-deprecated';
 
 @Component({
     selector: 'searchResults',

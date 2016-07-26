@@ -1,6 +1,6 @@
 <h2>{{listType.Description}}</h2>
 <ul class="list-inline">
-    <li *ngFor="#prod of apiProducts"
+    <li *ngFor="let prod of apiProducts"
         (click)="OnSelectProduct(prod)">
         <a>
             <div class="thumbnail" style="max-width: 160px;">

@@ -8,13 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
+var core_1 = require('@angular/core');
 var product_component_1 = require('./product.component');
 var product_service_1 = require('../services/product.service');
 var anime_api_service_1 = require('../services/anime.api.service');
-var core_2 = require('angular2/core');
-var router_1 = require('angular2/router');
-var router_2 = require('angular2/router');
+var core_2 = require('@angular/core');
+var router_deprecated_1 = require('@angular/router-deprecated');
+var router_deprecated_2 = require('@angular/router-deprecated');
 var ProductsSliceComponent = (function () {
     function ProductsSliceComponent(_productService, _router, _routeParams) {
         this._productService = _productService;
@@ -63,7 +63,7 @@ var ProductsSliceComponent = (function () {
             inputs: ['listTypeID'],
             outputs: ['productSelected']
         }), 
-        __metadata('design:paramtypes', [product_service_1.ProductService, router_1.Router, router_2.RouteParams])
+        __metadata('design:paramtypes', [product_service_1.ProductService, router_deprecated_1.Router, router_deprecated_2.RouteParams])
     ], ProductsSliceComponent);
     return ProductsSliceComponent;
 }());

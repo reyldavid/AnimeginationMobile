@@ -1,6 +1,7 @@
-﻿import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
-import {Router} from 'angular2/router';
-import {Component} from 'angular2/core';
+﻿import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
+import {RouteConfig} from '@angular/router-deprecated';
+import {Router} from '@angular/router-deprecated';
+import {Component} from '@angular/core';
 //import {Product} from './models/product';
 //import {ApiProduct} from './models/product';
 import {HomeComponent} from './products/home.component';
@@ -19,7 +20,7 @@ import {ShoppingCartComponent} from './customers/shoppingCart.component';
 import {NewsFeedComponent} from './customers/newsFeed.component';
 import {SearchResultsComponent} from './products/searchResults.component';
 import {CategoryListComponent} from './products/categoryList.component';
-import {OnInit} from 'angular2/core';
+import {OnInit} from '@angular/core';
 
 @Component({
     selector: 'aya-app',
@@ -84,4 +85,5 @@ export class AppComponent implements OnInit {
     //    }
     //}
 }
+
 

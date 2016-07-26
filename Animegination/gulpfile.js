@@ -5,42 +5,98 @@ Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
 */
 
 var gulp = require('gulp');
+var del = require('del');
+var dest = require('gulp-dest');
 
 function getPaths() {
     return {
         'nm': 'node_nodules/',
         'appScripts': 'wwwroot/appScripts/',
         'anime': '../Animegination Mobile/',
+        'animeLibs': '../Animegination Mobile/libs/',
         'animeScripts': '../Animegination Mobile/scripts/'
     };
 }
+
+var paths = {
+    app: ['scripts/**/*.ts'],
+    libs: [
+        'node_modules/es6-shim/es6-shim.min.js',
+        'node_modules/es6-shim/es6-shim.map',
+        'node_modules/zone.js/dist/zone.js*',
+        'node_modules/reflect-metadata/Reflect.js*',
+        //'node_modules/systemjs/dist/system.src.js*',
+        'node_modules/systemjs/dist/*.*',
+
+        'node_modules/angular2/bundles/js',
+        'node_modules/angular2/bundles/angular2.*.js',
+        'node_modules/angular2/bundles/angular2-polyfills.js',
+        'node_modules/angular2/bundles/http.*.js*',
+        'node_modules/angular2/bundles/router.*.js*',
+        'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
+
+        'node_modules/jquery/dist/jquery.*js',
+        'node_modules/bootstrap/dist/js/bootstrap*.js',
+        'node_modules/rxjs/bundles/Rx.js',
+        'node_modules/whitelist/lib/whitelist.js'
+    ],
+    packages: [
+        '@angular/common',
+        '@angular/compiler',
+        '@angular/core',
+        '@angular/http',
+        '@angular/platform-browser',
+        '@angular/platform-browser-dynamic',
+        '@angular/router',
+        '@angular/router-deprecated',
+        '@angular/testing',
+        '@angular/upgrade'
+    ],
+    css: [
+        'node_modules/bootstrap/dist/css/bootstrap.css',
+        'styles/custom.css'
+    ]
+};
 
 gulp.task('default', function () {
     // place code for your default task here
 });
 
 gulp.task('copyToLibs', function (done) {
-    gulp.src([
-        'node_modules/angular2/bundles/js',
-        'node_modules/angular2/bundles/angular2.*.js',
-        'node_modules/angular2/bundles/angular2-polyfills.js',
-        'node_modules/angular2/bundles/http.*.js*',
-        'node_modules/angular2/bundles/router.*.js*',
-        'node_modules/es6-shim/es6-shim.min.js',
-        'node_modules/es6-shim/es6-shim.map',
-        'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
-        'node_modules/systemjs/dist/*.*',
-        'node_modules/jquery/dist/jquery.*js',
-        'node_modules/bootstrap/dist/js/bootstrap*.js',
-        'node_modules/rxjs/bundles/Rx.js',
-        'node_modules/whitelist/lib/whitelist.js'
-    ]).pipe(gulp.dest('./wwwroot/libs/'));
 
-    gulp.src([
-        'node_modules/bootstrap/dist/css/bootstrap.css'
-        //'node_modules/bootstrap/dist/css/bootstrap.css',
-        //'node_modules/bootstrap/dist/css/bootstrap.css.map'
-    ]).pipe(gulp.dest('./wwwroot/css'));
+    gulp.src(paths.libs).pipe(gulp.dest('./wwwroot/libs'));
+
+    gulp.src(paths.css).pipe(gulp.dest('./wwwroot/css'));
+
+    //gulp.src('node_modules/rxjs/**/*.js*').pipe(gulp.dest('./wwwroot/libs/js/rxjs'));
+
+    for (var i = 0; i < paths.packages.length; i++) {
+        gulp.src('node_modules/' + paths.packages[i] + '/*.js*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i]));
+        gulp.src('node_modules/' + paths.packages[i] + '/src/**/*.js*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i] + '/src/'));
+    }
+
+    gulp.src(paths.app).pipe(gulp.dest('./wwwroot/appScripts'));
+
+    //gulp.src([
+    //    'node_modules/angular2/bundles/js',
+    //    'node_modules/angular2/bundles/angular2.*.js',
+    //    'node_modules/angular2/bundles/angular2-polyfills.js',
+    //    'node_modules/angular2/bundles/http.*.js*',
+    //    'node_modules/angular2/bundles/router.*.js*',
+    //    'node_modules/es6-shim/es6-shim.min.js',
+    //    'node_modules/es6-shim/es6-shim.map',
+    //    'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
+    //    'node_modules/systemjs/dist/*.*',
+    //    'node_modules/jquery/dist/jquery.*js',
+    //    'node_modules/bootstrap/dist/js/bootstrap*.js',
+    //    'node_modules/rxjs/bundles/Rx.js',
+    //    'node_modules/whitelist/lib/whitelist.js'
+    //]).pipe(gulp.dest('./wwwroot/libs/'));
+
+    //gulp.src([
+    //    'node_modules/bootstrap/dist/css/bootstrap.css',
+    //    'styles/custom.css'
+    //]).pipe(gulp.dest('./wwwroot/css'));
 
     gulp.src([
         'scripts/views/*.html'
@@ -48,32 +104,42 @@ gulp.task('copyToLibs', function (done) {
 });
 
 gulp.task('copyToAnime', function (done) {
-    gulp.src([
-        'node_modules/angular2/bundles/js',
-        'node_modules/angular2/bundles/angular2.*.js',
-        'node_modules/angular2/bundles/angular2-polyfills.js',
-        'node_modules/angular2/bundles/http.*.js*',
-        'node_modules/angular2/bundles/router.*.js*',
-        'node_modules/es6-shim/es6-shim.min.js',
-        'node_modules/es6-shim/es6-shim.map',
-        'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
-        'node_modules/systemjs/dist/*.*',
-        'node_modules/jquery/dist/jquery.*js',
-        'node_modules/bootstrap/dist/js/bootstrap*.js',
-        'node_modules/rxjs/bundles/Rx.js',
-        'node_modules/whitelist/lib/whitelist.js'
-    ]).pipe(gulp.dest(getPaths().anime + 'libs'));
 
-    gulp.src([
-        'node_modules/bootstrap/dist/css/bootstrap.css',
-        'wwwroot/css/custom.css'
-        //'node_modules/bootstrap/dist/css/bootstrap.css',
-        //'node_modules/bootstrap/dist/css/bootstrap.css.map'
-    ]).pipe(gulp.dest(getPaths().anime + 'css'));
+    gulp.src(paths.libs).pipe(gulp.dest(getPaths().anime + 'libs'));
+
+    gulp.src(paths.css).pipe(gulp.dest(getPaths().anime + 'css'));
+
+    for (var i = 0; i < paths.packages.length; i++) {
+        gulp.src('node_modules/' + paths.packages[i] + '/*.js*').pipe(gulp.dest(getPaths().animeLibs + paths.packages[i]));
+        gulp.src('node_modules/' + paths.packages[i] + '/src/**/*.js*').pipe(gulp.dest(getPaths().animeLibs + paths.packages[i] + '/src/'));
+    }
+
+    //gulp.src(paths.app).pipe(gulp.dest(getPaths().animeScripts));
+
+    //gulp.src([
+    //    'node_modules/angular2/bundles/js',
+    //    'node_modules/angular2/bundles/angular2.*.js',
+    //    'node_modules/angular2/bundles/angular2-polyfills.js',
+    //    'node_modules/angular2/bundles/http.*.js*',
+    //    'node_modules/angular2/bundles/router.*.js*',
+    //    'node_modules/es6-shim/es6-shim.min.js',
+    //    'node_modules/es6-shim/es6-shim.map',
+    //    'node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
+    //    'node_modules/systemjs/dist/*.*',
+    //    'node_modules/jquery/dist/jquery.*js',
+    //    'node_modules/bootstrap/dist/js/bootstrap*.js',
+    //    'node_modules/rxjs/bundles/Rx.js',
+    //    'node_modules/whitelist/lib/whitelist.js'
+    //]).pipe(gulp.dest(getPaths().anime + 'libs'));
+
+    //gulp.src([
+    //    'node_modules/bootstrap/dist/css/bootstrap.css',
+    //    'styles/custom.css'
+    //]).pipe(gulp.dest(getPaths().anime + 'css'));
 
     gulp.src([
         getPaths().appScripts + '*.js'
-    ]).pipe(gulp.dest(getPaths().anime + 'scripts'));
+    ]).pipe(gulp.dest(getPaths().animeScripts));
 
     gulp.src([
         'scripts/views/*.html'
@@ -99,8 +165,12 @@ gulp.task('copyToAnime', function (done) {
         getPaths().appScripts + 'services/*.js'
     ]).pipe(gulp.dest(getPaths().animeScripts + 'services'));
 
-    //gulp.src([
-    //    'scripts/views/*.html'
-    //]).pipe(gulp.dest(getPaths().animeScripts + 'views'));
 });
 
+// clean all the generated typescript files
+gulp.task('clean', function () {
+    return del(['wwwroot/appScripts/**/*',
+        'wwwroot/libs/**/*',
+        'wwwroot/css/*'
+    ]);
+});

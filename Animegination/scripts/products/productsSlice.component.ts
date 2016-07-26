@@ -1,13 +1,13 @@
-﻿import {Component} from 'angular2/core';
+﻿import {Component} from '@angular/core';
 import {ProductComponent} from './product.component';
 import {ApiProduct} from '../models/product';
 import {ListType} from '../models/listtype';
 import {ProductService} from '../services/product.service';
 import {ApiService} from '../services/anime.api.service';
-import {OnInit} from 'angular2/core';
-import {EventEmitter} from 'angular2/core';
-import {Router} from 'angular2/router';
-import {RouteParams} from 'angular2/router';
+import {OnInit} from '@angular/core';
+import {EventEmitter} from '@angular/core';
+import {Router} from '@angular/router-deprecated';
+import {RouteParams} from '@angular/router-deprecated';
 
 @Component({
     selector: 'productsSlice',

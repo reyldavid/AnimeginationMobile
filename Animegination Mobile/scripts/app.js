@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var router_1 = require('angular2/router');
-var router_2 = require('angular2/router');
-var core_1 = require('angular2/core');
+var router_deprecated_1 = require('@angular/router-deprecated');
+var router_deprecated_2 = require('@angular/router-deprecated');
+var router_deprecated_3 = require('@angular/router-deprecated');
+var core_1 = require('@angular/core');
 //import {Product} from './models/product';
 //import {ApiProduct} from './models/product';
 var home_component_1 = require('./products/home.component');
@@ -49,9 +50,9 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'aya-app',
             templateUrl: './views/App.html',
-            directives: [router_1.ROUTER_DIRECTIVES]
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES]
         }),
-        router_1.RouteConfig([
+        router_deprecated_2.RouteConfig([
             //        { path: '/', name: 'Home', component: HomeComponent, useAsDefault: true },
             { path: '/', name: 'Home', component: home_component_1.HomeComponent },
             { path: '/all', name: 'ProductsList', component: productsList_component_1.ProductsListComponent },
@@ -70,7 +71,7 @@ var AppComponent = (function () {
             { path: '/search', name: 'Search', component: searchResults_component_1.SearchResultsComponent },
             { path: '/genre:/categoryID/', name: 'CategoryList', component: categoryList_component_1.CategoryListComponent }
         ]), 
-        __metadata('design:paramtypes', [router_2.Router])
+        __metadata('design:paramtypes', [router_deprecated_3.Router])
     ], AppComponent);
     return AppComponent;
 }());

@@ -1,6 +1,6 @@
 <h2>Genres</h2>
 <ul class="list-inline">
-    <li *ngFor="#category of categories"
+    <li *ngFor="let category of categories"
         (click)="OnSelectCategory(category)">
         <a>
             <div class="thumbnail" style="max-width: 160px;">

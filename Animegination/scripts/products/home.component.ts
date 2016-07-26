@@ -1,7 +1,7 @@
-﻿import {Component} from 'angular2/core';
+﻿import {Component} from '@angular/core';
 import {ProductsSliceComponent} from './productsSlice.component';
-import {OnInit} from 'angular2/core';
-import {EventEmitter} from 'angular2/core';
+import {OnInit} from '@angular/core';
+import {EventEmitter} from '@angular/core';
 
 @Component({
     selector: 'home',

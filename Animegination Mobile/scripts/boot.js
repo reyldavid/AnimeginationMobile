@@ -1,15 +1,16 @@
 "use strict";
-///<reference path="../node_modules/angular2/typings/browser.d.ts"/>
-var browser_1 = require('angular2/platform/browser');
+///<reference path="../typings/browser.d.ts"/>
+/////<reference path="../node_modules/angular2/typings/browser.d.ts"/>
+var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var app_1 = require('./app');
+var router_deprecated_1 = require('@angular/router-deprecated');
+var http_1 = require('@angular/http');
+var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
 var router_1 = require('angular2/router');
-var http_1 = require('angular2/http');
-var core_1 = require('angular2/core');
-var router_2 = require('angular2/router');
-var router_3 = require('angular2/router');
-browser_1.bootstrap(app_1.AppComponent, [router_1.ROUTER_PROVIDERS,
+platform_browser_dynamic_1.bootstrap(app_1.AppComponent, [router_deprecated_1.ROUTER_PROVIDERS,
     http_1.HTTP_PROVIDERS,
-    core_1.provide(router_2.APP_BASE_HREF, { useValue: '/' }),
-    core_1.provide(router_3.LocationStrategy, { useClass: router_3.HashLocationStrategy })
+    core_1.provide(common_1.APP_BASE_HREF, { useValue: '/' }),
+    core_1.provide(router_1.LocationStrategy, { useClass: router_1.HashLocationStrategy })
 ]);
 //# sourceMappingURL=boot.js.map

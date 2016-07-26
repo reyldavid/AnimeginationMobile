@@ -38,10 +38,2194 @@
     <Content Include="App_Resources\Android\drawable-xxxhdpi\splashscreen.png" />
     <Content Include="App_Resources\WP8\SplashScreenImage.screen-720p.jpg" />
     <Content Include="App_Resources\WP8\SplashScreenImage.screen-WVGA.jpg" />
+    <Content Include="css\bootstrap.css">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="css\custom.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="img\K-ON 2732.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\common.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\common_directives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\common_directives.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\common_directives.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\core_directives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\core_directives.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\core_directives.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_class.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_class.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_class.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_for.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_for.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_for.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_if.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_if.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_if.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_plural.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_plural.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_plural.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_style.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_style.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_style.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_switch.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_switch.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_switch.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_template_outlet.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_template_outlet.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\ng_template_outlet.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\observable_list_diff.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\directives\observable_list_diff.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\async.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\async.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\intl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\intl.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\promise.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\facade\promise.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\abstract_control_directive.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\abstract_control_directive.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\checkbox_value_accessor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\checkbox_value_accessor.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\checkbox_value_accessor.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\control_container.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\control_container.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\control_value_accessor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\control_value_accessor.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\control_value_accessor.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\default_value_accessor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\default_value_accessor.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\default_value_accessor.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\form_interface.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\form_interface.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_group.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_group.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_group.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_name.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_name.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_name.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_status.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_status.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_control_status.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form_control.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form_control.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form_control.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form_model.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form_model.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_form_model.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_model.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_model.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\ng_model.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\normalize_validator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\normalize_validator.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\number_value_accessor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\number_value_accessor.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\number_value_accessor.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\radio_control_value_accessor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\radio_control_value_accessor.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\radio_control_value_accessor.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\select_control_value_accessor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\select_control_value_accessor.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\select_control_value_accessor.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\shared.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\shared.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\validators.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\validators.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\directives\validators.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\form_builder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\form_builder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\form_builder.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\model.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\model.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\model.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\validators.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\validators.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\forms\validators.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\hash_location_strategy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\hash_location_strategy.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\hash_location_strategy.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\location.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\location.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\location.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\location_strategy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\location_strategy.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\location_strategy.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\path_location_strategy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\path_location_strategy.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\path_location_strategy.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\platform_location.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\location\platform_location.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\async_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\async_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\async_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\common_pipes.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\common_pipes.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\common_pipes.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\date_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\date_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\date_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\i18n_plural_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\i18n_plural_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\i18n_plural_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\i18n_select_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\i18n_select_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\i18n_select_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\invalid_pipe_argument_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\invalid_pipe_argument_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\json_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\json_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\json_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\lowercase_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\lowercase_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\lowercase_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\number_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\number_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\number_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\replace_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\replace_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\replace_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\slice_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\slice_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\slice_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\uppercase_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\uppercase_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\src\pipes\uppercase_pipe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\common\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\compiler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\compiler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\compiler.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\core_private.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\core_private.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\core_private.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\private_export.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\private_export.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\assertions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\assertions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\compiler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\compiler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\compiler.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\compile_metadata.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\compile_metadata.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\config.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_lifecycle_reflector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_lifecycle_reflector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_normalizer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_normalizer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_normalizer.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\directive_resolver.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\ast.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\ast.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\lexer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\lexer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\lexer.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\parser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\parser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\expression_parser\parser.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\async.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\async.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\promise.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\facade\promise.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_ast.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_ast.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_lexer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_lexer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_parser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_parser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_parser.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_tags.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_tags.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\html_tags.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\identifiers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\identifiers.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\metadata_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\metadata_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\metadata_resolver.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\offline_compiler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\offline_compiler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\abstract_emitter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\abstract_emitter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\abstract_emitter.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\abstract_js_emitter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\abstract_js_emitter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\dart_emitter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\dart_emitter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\interpretive_view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\interpretive_view.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_ast.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_ast.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_ast.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_interpreter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_interpreter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_jit.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\output_jit.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\path_util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\path_util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\ts_emitter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\output\ts_emitter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\parse_util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\parse_util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\pipe_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\pipe_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\pipe_resolver.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\provider_parser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\provider_parser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\runtime_compiler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\runtime_compiler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\runtime_compiler.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\schema\dom_element_schema_registry.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\schema\dom_element_schema_registry.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\schema\dom_element_schema_registry.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\schema\element_schema_registry.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\schema\element_schema_registry.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\selector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\selector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\shadow_css.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\shadow_css.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\style_compiler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\style_compiler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\style_compiler.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\style_url_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\style_url_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_ast.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_ast.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_parser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_parser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_parser.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_preparser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\template_preparser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\url_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\url_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\url_resolver.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_binding.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_binding.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_element.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_element.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_method.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_method.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_pipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_pipe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_query.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_query.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\compile_view.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\constants.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\constants.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\event_binder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\event_binder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\expression_converter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\expression_converter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\lifecycle_binder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\lifecycle_binder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\property_binder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\property_binder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_binder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_binder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_builder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_builder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_compiler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_compiler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_compiler\view_compiler.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\view_resolver.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\xhr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\src\xhr.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\compiler\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\core.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\private_export.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\private_export.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\private_export.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_common_providers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_common_providers.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_common_providers.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_ref.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_tokens.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_tokens.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\application_tokens.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detection_util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detection_util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detection_util.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detector_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\change_detector_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\constants.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\constants.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\constants.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\default_iterable_differ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\default_iterable_differ.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\default_keyvalue_differ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\default_keyvalue_differ.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\iterable_differs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\iterable_differs.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\keyvalue_differs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\differs\keyvalue_differs.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\pipe_transform.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\change_detection\pipe_transform.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\console.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\console.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\console.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\debug\debug_node.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\debug\debug_node.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\debug\debug_renderer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\debug\debug_renderer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\decorators.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\decorators.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\decorators.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\forward_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\forward_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\injector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\injector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\injector.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\metadata.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\metadata.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\opaque_token.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\opaque_token.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\provider.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\provider.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\provider_util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\provider_util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_injector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_injector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_key.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_key.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_provider.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\di\reflective_provider.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\async.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\async.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\promise.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\facade\promise.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\component_factory.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\component_factory.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\component_resolver.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\component_resolver.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\component_resolver.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\debug_context.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\debug_context.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\dynamic_component_loader.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\dynamic_component_loader.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\dynamic_component_loader.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\element.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\element.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\element_injector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\element_injector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\element_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\element_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\query_list.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\query_list.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\template_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\template_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_container_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_container_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_ref.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_ref.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_type.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_type.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_utils.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_utils.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\linker\view_utils.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\di.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\di.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\directives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\directives.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\lifecycle_hooks.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\lifecycle_hooks.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\lifecycle_hooks.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\view.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\metadata\view.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\platform_common_providers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\platform_common_providers.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\platform_common_providers.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\platform_directives_and_pipes.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\platform_directives_and_pipes.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\platform_directives_and_pipes.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\profile.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\profile.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\profile.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\wtf_impl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\wtf_impl.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\wtf_init.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\profile\wtf_init.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\platform_reflection_capabilities.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\platform_reflection_capabilities.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflection_capabilities.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflection_capabilities.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflector_reader.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\reflector_reader.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\types.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\reflection\types.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\render.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\render.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\render\api.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\render\api.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\testability\testability.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\testability\testability.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\testability\testability.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\util\decorators.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\util\decorators.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\zone.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\zone.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\zone\ng_zone.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\zone\ng_zone.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\zone\ng_zone_impl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\src\zone\ng_zone_impl.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\core\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\http.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\http.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\http.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\http.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\browser_jsonp.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\browser_jsonp.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\browser_jsonp.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\browser_xhr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\browser_xhr.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\browser_xhr.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\jsonp_backend.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\jsonp_backend.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\jsonp_backend.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\xhr_backend.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\xhr_backend.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\backends\xhr_backend.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\base_request_options.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\base_request_options.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\base_request_options.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\base_response_options.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\base_response_options.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\base_response_options.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\enums.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\enums.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\headers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\headers.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\http.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\http.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\http.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\http_utils.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\http_utils.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\interfaces.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\interfaces.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\static_request.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\static_request.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\static_response.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\static_response.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\url_search_params.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\src\url_search_params.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\http\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\core_private.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\core_private.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\core_private.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\platform-browser-dynamic.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\platform_browser_dynamic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\platform_browser_dynamic.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\platform_browser_dynamic.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\platform_browser_private.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\platform_browser_private.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\promise.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\facade\promise.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\xhr\xhr_cache.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\xhr\xhr_cache.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\xhr\xhr_impl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\src\xhr\xhr_impl.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser-dynamic\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\core_private.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\core_private.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\core_private.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\platform-browser.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\private_export.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\private_export.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\animation.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\animation.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\animation_builder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\animation_builder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\animation_builder.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\browser_details.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\browser_details.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\browser_details.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\css_animation_builder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\css_animation_builder.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\css_animation_options.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\animate\css_animation_options.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\browser_adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\browser_adapter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\generic_browser_adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\generic_browser_adapter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\location\browser_platform_location.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\location\browser_platform_location.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\location\browser_platform_location.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\testability.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\testability.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\title.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\title.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\tools\common_tools.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\tools\common_tools.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\tools\tools.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser\tools\tools.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser_common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser_common.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\browser_common.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\debug\by.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\debug\by.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\debug\ng_probe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\debug\ng_probe.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\debug\ng_probe.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_adapter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_renderer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_renderer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_renderer.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_tokens.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_tokens.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\dom_tokens.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\dom_events.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\dom_events.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\dom_events.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\event_manager.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\event_manager.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\event_manager.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\hammer_common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\hammer_common.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\hammer_gestures.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\hammer_gestures.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\hammer_gestures.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\key_events.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\key_events.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\events\key_events.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\shared_styles_host.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\shared_styles_host.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\shared_styles_host.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\dom\util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\browser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\browser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\browser.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\math.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\math.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\facade\math.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\platform_browser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\platform_browser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\platform_browser_static.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\platform_browser_static.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\src\platform_browser_static.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\platform-browser\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\angular_js.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\angular_js.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\angular_js.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\constants.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\constants.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\constants.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\downgrade_ng2_adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\downgrade_ng2_adapter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\metadata.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\metadata.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\upgrade_adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\upgrade_adapter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\upgrade_ng1_adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\upgrade_ng1_adapter.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\util.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\src\util.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\upgrade.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\upgrade.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\upgrade\upgrade.umd.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="libs\angular2-polyfills.js">
@@ -75,6 +2259,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="libs\jquery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\Reflect.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\Reflect.js.map">
       <SubType>Content</SubType>
     </Content>
     <Content Include="libs\router.dev.js">
@@ -128,6 +2318,9 @@
     <Content Include="libs\whitelist.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="libs\zone.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\app.js">
       <SubType>Content</SubType>
     </Content>
@@ -174,6 +2367,9 @@
     <Content Include="scripts\products\views\accountSettings.html" />
     <Content Include="scripts\products\views\App.html" />
     <Content Include="scripts\products\views\categories.html" />
+    <Content Include="scripts\products\views\categoryList.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\products\views\contactUs.html" />
     <Content Include="scripts\products\views\home.html" />
     <Content Include="scripts\products\views\login.html" />
@@ -223,8 +2419,6 @@
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\bootstrap.css.map" />
     <Content Include="css\index.css" />
     <Content Include="img\Animegination-thumbnail.png" />
     <Content Include="img\cordova.png" />
@@ -286,6 +2480,7 @@
     <Resource Include="App_Resources\WP8\Assets\WideLogo.png" />
     <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
     <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <TypeScriptCompile Include="libs\zone.js.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\cordova.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
@@ -349,6 +2544,57 @@
     <Folder Include="css\" />
     <Folder Include="img\" />
     <Folder Include="libs\" />
+    <Folder Include="libs\%40angular\" />
+    <Folder Include="libs\%40angular\common\" />
+    <Folder Include="libs\%40angular\common\src\" />
+    <Folder Include="libs\%40angular\common\src\directives\" />
+    <Folder Include="libs\%40angular\common\src\facade\" />
+    <Folder Include="libs\%40angular\common\src\forms\" />
+    <Folder Include="libs\%40angular\common\src\forms\directives\" />
+    <Folder Include="libs\%40angular\common\src\location\" />
+    <Folder Include="libs\%40angular\common\src\pipes\" />
+    <Folder Include="libs\%40angular\compiler\" />
+    <Folder Include="libs\%40angular\compiler\src\" />
+    <Folder Include="libs\%40angular\compiler\src\expression_parser\" />
+    <Folder Include="libs\%40angular\compiler\src\facade\" />
+    <Folder Include="libs\%40angular\compiler\src\output\" />
+    <Folder Include="libs\%40angular\compiler\src\schema\" />
+    <Folder Include="libs\%40angular\compiler\src\view_compiler\" />
+    <Folder Include="libs\%40angular\core\" />
+    <Folder Include="libs\%40angular\core\src\" />
+    <Folder Include="libs\%40angular\core\src\change_detection\" />
+    <Folder Include="libs\%40angular\core\src\change_detection\differs\" />
+    <Folder Include="libs\%40angular\core\src\debug\" />
+    <Folder Include="libs\%40angular\core\src\di\" />
+    <Folder Include="libs\%40angular\core\src\facade\" />
+    <Folder Include="libs\%40angular\core\src\linker\" />
+    <Folder Include="libs\%40angular\core\src\metadata\" />
+    <Folder Include="libs\%40angular\core\src\profile\" />
+    <Folder Include="libs\%40angular\core\src\reflection\" />
+    <Folder Include="libs\%40angular\core\src\render\" />
+    <Folder Include="libs\%40angular\core\src\testability\" />
+    <Folder Include="libs\%40angular\core\src\util\" />
+    <Folder Include="libs\%40angular\core\src\zone\" />
+    <Folder Include="libs\%40angular\http\" />
+    <Folder Include="libs\%40angular\http\src\" />
+    <Folder Include="libs\%40angular\http\src\backends\" />
+    <Folder Include="libs\%40angular\http\src\facade\" />
+    <Folder Include="libs\%40angular\platform-browser-dynamic\" />
+    <Folder Include="libs\%40angular\platform-browser-dynamic\src\" />
+    <Folder Include="libs\%40angular\platform-browser-dynamic\src\facade\" />
+    <Folder Include="libs\%40angular\platform-browser-dynamic\src\xhr\" />
+    <Folder Include="libs\%40angular\platform-browser\" />
+    <Folder Include="libs\%40angular\platform-browser\src\" />
+    <Folder Include="libs\%40angular\platform-browser\src\animate\" />
+    <Folder Include="libs\%40angular\platform-browser\src\browser\" />
+    <Folder Include="libs\%40angular\platform-browser\src\browser\location\" />
+    <Folder Include="libs\%40angular\platform-browser\src\browser\tools\" />
+    <Folder Include="libs\%40angular\platform-browser\src\dom\" />
+    <Folder Include="libs\%40angular\platform-browser\src\dom\debug\" />
+    <Folder Include="libs\%40angular\platform-browser\src\dom\events\" />
+    <Folder Include="libs\%40angular\platform-browser\src\facade\" />
+    <Folder Include="libs\%40angular\upgrade\" />
+    <Folder Include="libs\%40angular\upgrade\src\" />
     <Folder Include="scripts\customers\" />
     <Folder Include="scripts\models\" />
     <Folder Include="scripts\products\views\" />

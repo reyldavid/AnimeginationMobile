@@ -1,12 +1,12 @@
-﻿//import {ROUTER_DIRECTIVES} from 'angular2/router';
-import {Component} from 'angular2/core';
+﻿//import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
+import {Component} from '@angular/core';
 import {ProductComponent} from './product.component';
 //import {Product} from '../models/product';
 import {ApiProduct} from '../models/product';
 import {ProductService} from '../services/product.service';
 import {ApiService} from '../services/anime.api.service';
-import {OnInit} from 'angular2/core';
-import {EventEmitter} from 'angular2/core';
+import {OnInit} from '@angular/core';
+import {EventEmitter} from '@angular/core';
 
 @Component({
     selector: 'productsList',

@@ -7,7 +7,7 @@
         {{product.yourprice | currency:'USD':true }}
     </li>
 -->
-    <li *ngFor="#prod of apiProducts"
+    <li *ngFor="let prod of apiProducts"
         (click)="OnSelectProduct(prod)">
         {{prod?.ProductTitle}} <br />
         {{prod?.YourPrice | currency:'USD':true }}

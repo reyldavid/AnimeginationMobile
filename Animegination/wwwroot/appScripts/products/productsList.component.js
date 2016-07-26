@@ -8,12 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-//import {ROUTER_DIRECTIVES} from 'angular2/router';
-var core_1 = require('angular2/core');
+//import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
+var core_1 = require('@angular/core');
 var product_component_1 = require('./product.component');
 var product_service_1 = require('../services/product.service');
 var anime_api_service_1 = require('../services/anime.api.service');
-var core_2 = require('angular2/core');
+var core_2 = require('@angular/core');
 var ProductsListComponent = (function () {
     function ProductsListComponent(_productService) {
         this._productService = _productService;
