@@ -13,6 +13,7 @@
     "@angular/router-deprecated": "2.0.0-rc.0",
     "@angular/upgrade": "2.0.0-rc.0",
 
+    "angular2-jwt-rc0": "0.1.16",
     "whitelist": "1.0.2",
     "angular2": "2.0.0-beta.15",
     "systemjs": "0.19.31",

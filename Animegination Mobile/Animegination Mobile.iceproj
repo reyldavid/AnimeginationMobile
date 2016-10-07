@@ -2162,6 +2162,435 @@
     <Content Include="libs\%40angular\platform-browser\testing.js.map">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="libs\%40angular\router-deprecated\core_private.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\core_private.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\core_private.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\router-deprecated.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\router.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\router.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\directives\router_link.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\directives\router_link.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\directives\router_link.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\directives\router_outlet.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\directives\router_outlet.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\directives\router_outlet.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\async.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\async.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\base_wrapped_exception.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\base_wrapped_exception.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\exceptions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\exceptions.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\exception_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\exception_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\promise.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\facade\promise.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\instruction.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\instruction.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\instruction.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\interfaces.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\interfaces.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\lifecycle_annotations.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\lifecycle_annotations.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\lifecycle_annotations.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\lifecycle_annotations_impl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\lifecycle_annotations_impl.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\lifecycle_annotations_impl.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\route_lifecycle_reflector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\lifecycle\route_lifecycle_reflector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router_providers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router_providers.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router_providers.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router_providers_common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router_providers_common.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\router_providers_common.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_decorator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_decorator.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_decorator.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_impl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_impl.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_normalizer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_config\route_config_normalizer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_definition.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_definition.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_registry.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_registry.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\route_registry.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_handlers\async_route_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_handlers\async_route_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_handlers\route_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_handlers\route_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_handlers\sync_route_handler.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_handlers\sync_route_handler.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_paths\param_route_path.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_paths\param_route_path.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_paths\regex_route_path.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_paths\regex_route_path.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_paths\route_path.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\route_paths\route_path.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\rules.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\rules.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\rule_set.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\rules\rule_set.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\url_parser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\url_parser.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\url_parser.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\utils.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\src\utils.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router-deprecated\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\index.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\index.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\router.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\constants.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\constants.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\constants.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\core_private.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\core_private.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\core_private.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\directives\router_link.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\directives\router_link.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\directives\router_link.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\directives\router_outlet.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\directives\router_outlet.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\directives\router_outlet.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\async.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\async.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\collection.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\collection.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\collection.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\lang.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\lang.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\lang.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\promise.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\facade\promise.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\interfaces.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\interfaces.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\lifecycle_reflector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\lifecycle_reflector.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\link.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\link.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\metadata\decorators.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\metadata\decorators.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\metadata\decorators.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\metadata\metadata.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\metadata\metadata.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\recognize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\recognize.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_providers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_providers.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_providers.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_providers_common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_providers_common.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_providers_common.metadata.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_url_serializer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\router_url_serializer.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\segments.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\src\segments.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\testing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\%40angular\router\testing.js.map">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="libs\%40angular\upgrade\index.js">
       <SubType>Content</SubType>
     </Content>
@@ -2226,6 +2655,21 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="libs\%40angular\upgrade\upgrade.umd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2-jwt\angular2-jwt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2-jwt\angular2-jwt.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2-jwt\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2-jwt\tsconfig.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="libs\angular2-jwt\typings.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="libs\angular2-polyfills.js">
@@ -2315,9 +2759,6 @@
     <Content Include="libs\system.src.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="libs\whitelist.js">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="libs\zone.js">
       <SubType>Content</SubType>
     </Content>
@@ -2338,12 +2779,21 @@
     <Content Include="scripts\customers\shoppingCart.component.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\models\category.js" />
+    <Content Include="scripts\models\claimmodel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\listing.js" />
     <Content Include="scripts\models\listtype.js" />
+    <Content Include="scripts\models\loginmodel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\medium.js" />
     <Content Include="scripts\models\product.js" />
     <Content Include="scripts\models\publisher.js" />
     <Content Include="scripts\models\rating.js" />
+    <Content Include="scripts\models\tokenmodel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\userprofile.js" />
     <Content Include="scripts\products\categories.component.js" />
     <Content Include="scripts\products\categoryList.component.js">
@@ -2386,8 +2836,74 @@
     <Content Include="scripts\products\views\similarsList.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\security\auth.routerOutlet.component.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\services\anime.api.service.js" />
+    <Content Include="scripts\services\customer.service.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\services\headers.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\services\product.service.js" />
+    <Content Include="scripts\systemjs.config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\aboutUs.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\accountInfo.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\accountSettings.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\App.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\categories.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\categoryList.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\contactUs.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\home.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\newsFeed.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\orders.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\product.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\productsList.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\productsSlice.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\register.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\searchResults.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\shoppingCart.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\similarsList.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\aboutUs.html" />
     <Content Include="views\accountInfo.html" />
     <Content Include="views\accountSettings.html" />
@@ -2480,6 +2996,12 @@
     <Resource Include="App_Resources\WP8\Assets\WideLogo.png" />
     <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
     <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <TypeScriptCompile Include="libs\angular2-jwt\angular2-jwt.d.ts" />
+    <TypeScriptCompile Include="libs\angular2-jwt\angular2-jwt.ts" />
+    <TypeScriptCompile Include="libs\angular2-jwt\typings\browser.d.ts" />
+    <TypeScriptCompile Include="libs\angular2-jwt\typings\browser\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="libs\angular2-jwt\typings\main.d.ts" />
+    <TypeScriptCompile Include="libs\angular2-jwt\typings\main\ambient\es6-shim\index.d.ts" />
     <TypeScriptCompile Include="libs\zone.js.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\cordova.d.ts" />
     <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
@@ -2593,10 +3115,34 @@
     <Folder Include="libs\%40angular\platform-browser\src\dom\debug\" />
     <Folder Include="libs\%40angular\platform-browser\src\dom\events\" />
     <Folder Include="libs\%40angular\platform-browser\src\facade\" />
+    <Folder Include="libs\%40angular\router-deprecated\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\directives\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\facade\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\lifecycle\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\route_config\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\rules\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\rules\route_handlers\" />
+    <Folder Include="libs\%40angular\router-deprecated\src\rules\route_paths\" />
+    <Folder Include="libs\%40angular\router\" />
+    <Folder Include="libs\%40angular\router\src\" />
+    <Folder Include="libs\%40angular\router\src\directives\" />
+    <Folder Include="libs\%40angular\router\src\facade\" />
+    <Folder Include="libs\%40angular\router\src\metadata\" />
     <Folder Include="libs\%40angular\upgrade\" />
     <Folder Include="libs\%40angular\upgrade\src\" />
+    <Folder Include="libs\angular2-jwt\" />
+    <Folder Include="libs\angular2-jwt\typings\" />
+    <Folder Include="libs\angular2-jwt\typings\browser\" />
+    <Folder Include="libs\angular2-jwt\typings\browser\ambient\" />
+    <Folder Include="libs\angular2-jwt\typings\browser\ambient\es6-shim\" />
+    <Folder Include="libs\angular2-jwt\typings\main\" />
+    <Folder Include="libs\angular2-jwt\typings\main\ambient\" />
+    <Folder Include="libs\angular2-jwt\typings\main\ambient\es6-shim\" />
     <Folder Include="scripts\customers\" />
     <Folder Include="scripts\models\" />
+    <Folder Include="scripts\security\" />
+    <Folder Include="scripts\views\" />
     <Folder Include="scripts\products\views\" />
     <Folder Include="scripts\typings\cordova\" />
     <Folder Include="scripts\typings\cordova\plugins\" />

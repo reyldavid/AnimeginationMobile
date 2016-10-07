@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var router_deprecated_1 = require('@angular/router-deprecated');
 var router_deprecated_2 = require('@angular/router-deprecated');
-var router_deprecated_3 = require('@angular/router-deprecated');
 var core_1 = require('@angular/core');
 //import {Product} from './models/product';
 //import {ApiProduct} from './models/product';
@@ -30,6 +29,7 @@ var shoppingCart_component_1 = require('./customers/shoppingCart.component');
 var newsFeed_component_1 = require('./customers/newsFeed.component');
 var searchResults_component_1 = require('./products/searchResults.component');
 var categoryList_component_1 = require('./products/categoryList.component');
+var auth_routerOutlet_component_1 = require('./security/auth.routerOutlet.component');
 var AppComponent = (function () {
     //selectedProduct: ApiProduct;
     function AppComponent(_router) {
@@ -37,6 +37,7 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
         console.log('app init');
+        localStorage.removeItem('jwt');
         this._router.navigate(['Home']);
     };
     AppComponent.prototype.OnHome = function () {
@@ -50,9 +51,9 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'aya-app',
             templateUrl: './views/App.html',
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES]
+            directives: [auth_routerOutlet_component_1.AuthRouterOutlet, router_deprecated_2.RouterLink] // directives: [ROUTER_DIRECTIVES]
         }),
-        router_deprecated_2.RouteConfig([
+        router_deprecated_1.RouteConfig([
             //        { path: '/', name: 'Home', component: HomeComponent, useAsDefault: true },
             { path: '/', name: 'Home', component: home_component_1.HomeComponent },
             { path: '/all', name: 'ProductsList', component: productsList_component_1.ProductsListComponent },
@@ -71,7 +72,7 @@ var AppComponent = (function () {
             { path: '/search', name: 'Search', component: searchResults_component_1.SearchResultsComponent },
             { path: '/genre:/categoryID/', name: 'CategoryList', component: categoryList_component_1.CategoryListComponent }
         ]), 
-        __metadata('design:paramtypes', [router_deprecated_3.Router])
+        __metadata('design:paramtypes', [router_deprecated_1.Router])
     ], AppComponent);
     return AppComponent;
 }());

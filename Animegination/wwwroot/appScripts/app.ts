@@ -1,6 +1,6 @@
 import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
-import {RouteConfig} from '@angular/router-deprecated';
-import {Router} from '@angular/router-deprecated';
+import {RouteConfig, Router} from '@angular/router-deprecated';
+import {RouterLink} from '@angular/router-deprecated';
 import {Component} from '@angular/core';
 //import {Product} from './models/product';
 //import {ApiProduct} from './models/product';
@@ -21,11 +21,12 @@ import {NewsFeedComponent} from './customers/newsFeed.component';
 import {SearchResultsComponent} from './products/searchResults.component';
 import {CategoryListComponent} from './products/categoryList.component';
 import {OnInit} from '@angular/core';
+import {AuthRouterOutlet} from './security/auth.routerOutlet.component';
 
 @Component({
     selector: 'aya-app',
     templateUrl: './views/App.html',
-    directives: [ROUTER_DIRECTIVES]
+    directives: [AuthRouterOutlet, RouterLink]  // directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
     //        { path: '/', name: 'Home', component: HomeComponent, useAsDefault: true },
@@ -55,6 +56,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): any {
         console.log('app init');
+        localStorage.removeItem('jwt');
         this._router.navigate(['Home']);
     }
 

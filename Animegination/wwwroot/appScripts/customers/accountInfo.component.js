@@ -9,18 +9,61 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
+var http_1 = require('@angular/http');
+var router_deprecated_1 = require('@angular/router-deprecated');
+var angular2_jwt_1 = require('angular2-jwt');
 var AccountInfoComponent = (function () {
-    function AccountInfoComponent() {
+    function AccountInfoComponent(router, http, authHttp) {
+        this.router = router;
+        this.http = http;
+        this.authHttp = authHttp;
+        console.log('account info construct');
+        // We get the JWT from localStorage
+        this.jwt = localStorage.getItem('jwt');
+        // We also store the decoded JSON from this JWT
+        this.decodedJwt = this.jwt;
+        //this.decodedJwt = this.jwt && (<any>window).jwt_decode(this.jwt);
     }
+    AccountInfoComponent.prototype.logout = function () {
+        // Method to be called when the user wants to logout
+        // Logging out means just deleting the JWT from localStorage and redirecting the user to the Login page
+        localStorage.removeItem('jwt');
+        this.router.parent.navigateByUrl('/login');
+    };
+    AccountInfoComponent.prototype.callAnonymousApi = function () {
+        //        this._callApi('Anonymous', 'http://localhost:3001/api/random-quote');
+        console.log('Call Anonymous API');
+    };
+    AccountInfoComponent.prototype.callSecuredApi = function () {
+        // We call the secured API
+        //        this._callApi('Secured', 'http://localhost:3001/api/protected/random-quote');
+        console.log('Call Secured API');
+    };
+    AccountInfoComponent.prototype._callApi = function (type, url) {
+        var _this = this;
+        this.response = null;
+        if (type === 'Anonymous') {
+            // For non-protected routes, just use Http
+            this.http.get(url)
+                .subscribe(function (response) { return _this.response = response.text(); }, function (error) { return _this.response = error.text(); });
+        }
+        if (type === 'Secured') {
+            // For protected routes, use AuthHttp
+            this.authHttp.get(url)
+                .subscribe(function (response) { return _this.response = response.text(); }, function (error) { return _this.response = error.text(); });
+        }
+    };
     AccountInfoComponent.prototype.ngOnInit = function () {
         console.log('account info init');
     };
     AccountInfoComponent = __decorate([
         core_1.Component({
             selector: 'accountInfo',
-            templateUrl: './views/accountInfo.html'
+            templateUrl: './views/accountInfo.html',
+            directives: [common_1.CORE_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_deprecated_1.Router, http_1.Http, angular2_jwt_1.AuthHttp])
     ], AccountInfoComponent);
     return AccountInfoComponent;
 }());

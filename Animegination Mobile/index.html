@@ -42,7 +42,14 @@
     <script src="libs/Reflect.js"></script>
     <!--<script src="libs/whitelist.js"></script>-->
     <!-- 2. Configure SystemJS -->
+    <script src="scripts/systemjs.config.js"></script>
     <script>
+        System.import('app/boot')
+            .then(null, console.error.bind(console))
+            .catch(function (err)
+                { console.log(err); });
+    </script>
+    <!--<script>
             System.config({
                 packages: {
                     scripts: {
@@ -50,11 +57,11 @@
                     }
                 }
             });
-    </script>
-    <script>
+    </script>-->
+    <!--<script>
             System.import('scripts/boot')
                 .then(null, console.error.bind(console));
-    </script>
+    </script>-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
     <!--<script type="text/javascript">

@@ -37,8 +37,8 @@ var paths = {
 
         'node_modules/jquery/dist/jquery.*js',
         'node_modules/bootstrap/dist/js/bootstrap*.js',
-        'node_modules/rxjs/bundles/Rx.js',
-        'node_modules/whitelist/lib/whitelist.js'
+        'node_modules/rxjs/bundles/Rx.js'
+        //, 'node_modules/whitelist/lib/whitelist.js'
     ],
     packages: [
         '@angular/common',
@@ -50,7 +50,9 @@ var paths = {
         '@angular/router',
         '@angular/router-deprecated',
         '@angular/testing',
-        '@angular/upgrade'
+        '@angular/upgrade',
+        'angular2-jwt'
+        //, 'jwt-decode'
     ],
     css: [
         'node_modules/bootstrap/dist/css/bootstrap.css',
@@ -73,6 +75,10 @@ gulp.task('copyToLibs', function (done) {
     for (var i = 0; i < paths.packages.length; i++) {
         gulp.src('node_modules/' + paths.packages[i] + '/*.js*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i]));
         gulp.src('node_modules/' + paths.packages[i] + '/src/**/*.js*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i] + '/src/'));
+        gulp.src('node_modules/' + paths.packages[i] + '/typings/**/*.ts*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i] + '/typings/'));
+        gulp.src('node_modules/' + paths.packages[i] + '/*.ts*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i]));
+        //gulp.src('node_modules/' + paths.packages[i] + '/build/*.js*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i] + '/build/'));
+        //gulp.src('node_modules/' + paths.packages[i] + '/lib/*.js*').pipe(gulp.dest('./wwwroot/libs/' + paths.packages[i] + '/lib/'));
     }
 
     gulp.src(paths.app).pipe(gulp.dest('./wwwroot/appScripts'));
@@ -112,6 +118,8 @@ gulp.task('copyToAnime', function (done) {
     for (var i = 0; i < paths.packages.length; i++) {
         gulp.src('node_modules/' + paths.packages[i] + '/*.js*').pipe(gulp.dest(getPaths().animeLibs + paths.packages[i]));
         gulp.src('node_modules/' + paths.packages[i] + '/src/**/*.js*').pipe(gulp.dest(getPaths().animeLibs + paths.packages[i] + '/src/'));
+        gulp.src('node_modules/' + paths.packages[i] + '/typings/**/*.ts*').pipe(gulp.dest(getPaths().animeLibs + paths.packages[i] + '/typings/'));
+        gulp.src('node_modules/' + paths.packages[i] + '/*.ts*').pipe(gulp.dest(getPaths().animeLibs + paths.packages[i]));
     }
 
     //gulp.src(paths.app).pipe(gulp.dest(getPaths().animeScripts));
@@ -164,6 +172,10 @@ gulp.task('copyToAnime', function (done) {
     gulp.src([
         getPaths().appScripts + 'services/*.js'
     ]).pipe(gulp.dest(getPaths().animeScripts + 'services'));
+
+    gulp.src([
+        getPaths().appScripts + 'security/*.js'
+    ]).pipe(gulp.dest(getPaths().animeScripts + 'security'));
 
 });
 
