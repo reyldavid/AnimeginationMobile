@@ -29,6 +29,7 @@ var shoppingCart_component_1 = require('./customers/shoppingCart.component');
 var newsFeed_component_1 = require('./customers/newsFeed.component');
 var searchResults_component_1 = require('./products/searchResults.component');
 var categoryList_component_1 = require('./products/categoryList.component');
+var profileSettings_component_1 = require('./customers/profileSettings.component');
 var auth_routerOutlet_component_1 = require('./security/auth.routerOutlet.component');
 var AppComponent = (function () {
     //selectedProduct: ApiProduct;
@@ -70,7 +71,8 @@ var AppComponent = (function () {
             { path: '/news', name: 'News', component: newsFeed_component_1.NewsFeedComponent },
             { path: '/cart', name: 'Cart', component: shoppingCart_component_1.ShoppingCartComponent },
             { path: '/search', name: 'Search', component: searchResults_component_1.SearchResultsComponent },
-            { path: '/genre:/categoryID/', name: 'CategoryList', component: categoryList_component_1.CategoryListComponent }
+            { path: '/genre:/categoryID/', name: 'CategoryList', component: categoryList_component_1.CategoryListComponent },
+            { path: '/profile', name: 'ProfileSettings', component: profileSettings_component_1.ProfileSettingsComponent }
         ]), 
         __metadata('design:paramtypes', [router_deprecated_1.Router])
     ], AppComponent);

@@ -5,14 +5,17 @@
 }
 
 h1, h2, h3, h4 {
-    color: #FF8201;
+    color: #FFA80B;
 }
 .h1, .h2, .h3, .h4 {
     margin-top: 10px;
+    color: #FFA80B;
+}
+.anime-orig-color {
     color: #FF8201;
 }
 .anime-color {
-    color: #FF8201;
+    color: #FFA80B;
 }
 .bg-lightgray {
     background-color: #eee;
@@ -64,4 +67,20 @@ li > a.image-link {
 }
 .transparent {
     background-color: transparent;
+}
+.anime-button {
+    color: white;
+    background-color: #FFA80B;
+    min-width: 120px;
+}
+.anime-button-lg {
+    color: white;
+    background-color: #FFA80B;
+    min-width: 140px;
+    min-height: 45px;
+    border-radius: 24px;
+    font-size: 18px;
+}
+.panel-tall {
+    min-height: 80px;
 }

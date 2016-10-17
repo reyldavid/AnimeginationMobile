@@ -128,6 +128,23 @@ var ApiService = (function () {
             .catch(this.handleError);
         return result;
     };
+    ApiService.prototype.getUserAccount = function (token) {
+        headers_1.contentHeaders.set("JWTToken", token.token);
+        //var result = this._http.get("http://localhost:65164/api/useraccounts/",
+        var result = this._http.get("https://animegination2.azurewebsites.net/api/useraccounts/", { headers: headers_1.contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+        return result;
+    };
+    ApiService.prototype.putUserAccount = function (token, userAccount) {
+        headers_1.contentHeaders.set("JWTToken", token.token);
+        var body = JSON.stringify(userAccount);
+        //var result = this._http.put("http://localhost:65164/api/useraccounts/names",
+        var result = this._http.put("https://animegination2.azurewebsites.net/api/useraccounts/names", body, { headers: headers_1.contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+        return result;
+    };
     ApiService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])

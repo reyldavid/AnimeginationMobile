@@ -2775,6 +2775,9 @@
     <Content Include="scripts\customers\login.component.js" />
     <Content Include="scripts\customers\newsFeed.component.js" />
     <Content Include="scripts\customers\orders.component.js" />
+    <Content Include="scripts\customers\profileSettings.component.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\customers\register.component.js" />
     <Content Include="scripts\customers\shoppingCart.component.js" />
     <Content Include="scripts\index.js" />
@@ -2789,12 +2792,27 @@
     </Content>
     <Content Include="scripts\models\medium.js" />
     <Content Include="scripts\models\product.js" />
+    <Content Include="scripts\models\profileSettingsModel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\publisher.js" />
     <Content Include="scripts\models\rating.js" />
+    <Content Include="scripts\models\registermodel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\tokenmodel.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\models\userAccountModel.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\models\userAccountReturnModel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\userprofile.js" />
+    <Content Include="scripts\models\userReturnModel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\products\categories.component.js" />
     <Content Include="scripts\products\categoryList.component.js">
       <SubType>Content</SubType>
@@ -2828,6 +2846,9 @@
     <Content Include="scripts\products\views\product.html" />
     <Content Include="scripts\products\views\productsList.html" />
     <Content Include="scripts\products\views\productsSlice.html" />
+    <Content Include="scripts\products\views\profileSettings.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\products\views\register.html" />
     <Content Include="scripts\products\views\searchResults.html">
       <SubType>Content</SubType>
@@ -2920,6 +2941,9 @@
     <Content Include="views\product.html" />
     <Content Include="views\productsList.html" />
     <Content Include="views\productsSlice.html" />
+    <Content Include="views\profileSettings.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\register.html" />
     <Content Include="views\searchResults.html">
       <SubType>Content</SubType>

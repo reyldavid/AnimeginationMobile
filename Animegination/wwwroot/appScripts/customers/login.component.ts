@@ -39,6 +39,10 @@ export class LoginComponent implements OnInit {
             .then((token: TokenModel) => {
                 this.token = token;
                 localStorage.setItem('jwt', this.token.token);
+
+                console.log('aya login token: ');
+                console.log(this.token.token);
+
                 this.router.parent.navigateByUrl('/account');
             })
             .catch((error: string) => {

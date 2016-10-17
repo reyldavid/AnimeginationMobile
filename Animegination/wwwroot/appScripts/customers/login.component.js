@@ -33,6 +33,8 @@ var LoginComponent = (function () {
             .then(function (token) {
             _this.token = token;
             localStorage.setItem('jwt', _this.token.token);
+            console.log('aya login token: ');
+            console.log(_this.token.token);
             _this.router.parent.navigateByUrl('/account');
         })
             .catch(function (error) {

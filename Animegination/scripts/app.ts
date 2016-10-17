@@ -20,6 +20,7 @@ import {ShoppingCartComponent} from './customers/shoppingCart.component';
 import {NewsFeedComponent} from './customers/newsFeed.component';
 import {SearchResultsComponent} from './products/searchResults.component';
 import {CategoryListComponent} from './products/categoryList.component';
+import {ProfileSettingsComponent} from './customers/profileSettings.component';
 import {OnInit} from '@angular/core';
 import {AuthRouterOutlet} from './security/auth.routerOutlet.component';
 
@@ -45,7 +46,8 @@ import {AuthRouterOutlet} from './security/auth.routerOutlet.component';
     { path: '/news', name: 'News', component: NewsFeedComponent },
     { path: '/cart', name: 'Cart', component: ShoppingCartComponent },
     { path: '/search', name: 'Search', component: SearchResultsComponent },
-    { path: '/genre:/categoryID/', name: 'CategoryList', component: CategoryListComponent }
+    { path: '/genre:/categoryID/', name: 'CategoryList', component: CategoryListComponent },
+    { path: '/profile', name: 'ProfileSettings', component: ProfileSettingsComponent }
 ])
 
 export class AppComponent implements OnInit {

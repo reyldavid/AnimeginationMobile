@@ -23,7 +23,7 @@ var RegisterComponent = (function () {
         this.http = http;
         this._customerService = _customerService;
         this._formBuilder = _formBuilder;
-        this.token = { "token": "" };
+        this.token = { token: "" };
         this.registerInput = {
             UserId: "",
             Username: "",

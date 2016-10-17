@@ -13,16 +13,29 @@ var common_1 = require('@angular/common');
 var http_1 = require('@angular/http');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var angular2_jwt_1 = require('angular2-jwt');
+var anime_api_service_1 = require('../services/anime.api.service');
+var customer_service_1 = require('../services/customer.service');
 var AccountInfoComponent = (function () {
-    function AccountInfoComponent(router, http, authHttp) {
+    function AccountInfoComponent(router, http, authHttp, _customerService) {
         this.router = router;
         this.http = http;
         this.authHttp = authHttp;
+        this._customerService = _customerService;
+        // Here we define this component's instance variables
+        // They're accessible from the template
+        this.token = { token: "" };
+        this.userAccount = {
+            UserId: "", UserName: "",
+            FirstName: "", LastName: "",
+            Address: "", City: "", State: "", ZipCode: "",
+            CellPhone: "", HomePhone: "",
+            Email: "", Created: "",
+            CreditCardType: "", CreditCardNumber: "", CreditCardExpiration: ""
+        };
         console.log('account info construct');
         // We get the JWT from localStorage
-        this.jwt = localStorage.getItem('jwt');
+        this.token.token = localStorage.getItem('jwt');
         // We also store the decoded JSON from this JWT
-        this.decodedJwt = this.jwt;
         //this.decodedJwt = this.jwt && (<any>window).jwt_decode(this.jwt);
     }
     AccountInfoComponent.prototype.logout = function () {
@@ -55,15 +68,46 @@ var AccountInfoComponent = (function () {
         }
     };
     AccountInfoComponent.prototype.ngOnInit = function () {
+        var _this = this;
         console.log('account info init');
+        this.recentPurchases = 'You Don\'t Have Any Purchases In Your Account Right Now';
+        this.addressBook = 'We have no default address on file for this account';
+        //this.userFullName = 'Aya Ueto';
+        //this.userEmail = 'ayaueto@anime.com';
+        //this.userPhone = '(925)984-2849';
+        this._customerService.getUser(this.token)
+            .then(function (userAccount) {
+            _this.userAccount = userAccount;
+        })
+            .catch(function (error) {
+            switch (error.toString()) {
+                case "401":
+                    //this.unauthorized = true;
+                    break;
+                case "404":
+                    //this.notFound = true;
+                    break;
+                default:
+                    console.log('account info get user error: ' + error);
+                    break;
+            }
+        });
+    };
+    AccountInfoComponent.prototype.goOrders = function () {
+    };
+    AccountInfoComponent.prototype.goProfile = function () {
+        this.router.parent.navigateByUrl('/profile');
+    };
+    AccountInfoComponent.prototype.goAddress = function () {
     };
     AccountInfoComponent = __decorate([
         core_1.Component({
             selector: 'accountInfo',
             templateUrl: './views/accountInfo.html',
-            directives: [common_1.CORE_DIRECTIVES]
+            directives: [common_1.CORE_DIRECTIVES],
+            providers: [customer_service_1.CustomerService, anime_api_service_1.ApiService]
         }), 
-        __metadata('design:paramtypes', [router_deprecated_1.Router, http_1.Http, angular2_jwt_1.AuthHttp])
+        __metadata('design:paramtypes', [router_deprecated_1.Router, http_1.Http, angular2_jwt_1.AuthHttp, customer_service_1.CustomerService])
     ], AccountInfoComponent);
     return AccountInfoComponent;
 }());

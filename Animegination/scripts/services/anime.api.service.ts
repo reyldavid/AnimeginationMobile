@@ -9,6 +9,7 @@ import {TokenModel} from '../models/tokenmodel';
 import {RegisterModel} from '../models/registermodel';
 import {LoginModel} from '../models/loginmodel';
 import {UserReturnModel} from '../models/userReturnModel';
+import {UserAccountModel} from '../models/userAccountModel';
 import {contentHeaders} from '../services/headers';
 import 'rxjs/Rx';
 //import 'rxjs/add/operator/map';
@@ -178,6 +179,32 @@ export class ApiService {
         let body = JSON.stringify(registerModel);
 
         var result = this._http.post("https://animegination2.azurewebsites.net/api/useraccounts",
+            body, { headers: contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+
+        return result;
+    }
+
+    getUserAccount(token: TokenModel): Observable<UserAccountModel> {
+        contentHeaders.set("JWTToken", token.token);
+
+        //var result = this._http.get("http://localhost:65164/api/useraccounts/",
+        var result = this._http.get("https://animegination2.azurewebsites.net/api/useraccounts/",
+            { headers: contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+
+        return result;
+    }
+
+    putUserAccount(token: TokenModel, userAccount: UserAccountModel): Observable<UserAccountModel> {
+
+        contentHeaders.set("JWTToken", token.token);
+        let body = JSON.stringify(userAccount);
+
+        //var result = this._http.put("http://localhost:65164/api/useraccounts/names",
+        var result = this._http.put("https://animegination2.azurewebsites.net/api/useraccounts/names",
             body, { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);

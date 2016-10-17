@@ -4,28 +4,46 @@ import { CORE_DIRECTIVES } from '@angular/common';
 import { Http, Headers } from '@angular/http';
 import { Router } from '@angular/router-deprecated';
 import { AuthHttp } from 'angular2-jwt';
+import { ApiService } from '../services/anime.api.service';
+import { CustomerService } from '../services/customer.service';
+import { TokenModel } from '../models/tokenModel';
+import { UserAccountModel } from '../models/userAccountModel';
 
 @Component({
     selector: 'accountInfo',
     templateUrl: './views/accountInfo.html',
-    directives: [CORE_DIRECTIVES]
+    directives: [CORE_DIRECTIVES],
+    providers: [CustomerService, ApiService]
 })
 
 export class AccountInfoComponent implements OnInit {
 
     // Here we define this component's instance variables
     // They're accessible from the template
-    jwt: string;
-    decodedJwt: string;
+    token: TokenModel = { token: "" };
+    userAccount: UserAccountModel = {
+        UserId: "", UserName: "",
+        FirstName: "", LastName: "",
+        Address: "", City: "", State: "", ZipCode: "",
+        CellPhone: "", HomePhone: "",
+        Email: "", Created: "",
+        CreditCardType: "", CreditCardNumber: "", CreditCardExpiration: ""
+    };
     response: string;
-    api: string;
+    recentPurchases: string;
+    addressBook: string;
+    userFullName: string;
+    userEmail: string;
+    userPhone: string;
 
-    constructor(public router: Router, public http: Http, public authHttp: AuthHttp) {
+    constructor(public router: Router, public http: Http,
+        public authHttp: AuthHttp,
+        private _customerService: CustomerService)
+    {
         console.log('account info construct');
         // We get the JWT from localStorage
-        this.jwt = localStorage.getItem('jwt');
+        this.token.token = localStorage.getItem('jwt');
         // We also store the decoded JSON from this JWT
-        this.decodedJwt = this.jwt;
         //this.decodedJwt = this.jwt && (<any>window).jwt_decode(this.jwt);
     }
 
@@ -69,5 +87,38 @@ export class AccountInfoComponent implements OnInit {
 
     ngOnInit(): any {
         console.log('account info init');
+        this.recentPurchases = 'You Don\'t Have Any Purchases In Your Account Right Now';
+        this.addressBook = 'We have no default address on file for this account';
+        //this.userFullName = 'Aya Ueto';
+        //this.userEmail = 'ayaueto@anime.com';
+        //this.userPhone = '(925)984-2849';
+
+        this._customerService.getUser(this.token)
+            .then((userAccount: UserAccountModel) => {
+                this.userAccount = userAccount;
+            })
+            .catch((error: string) => {
+                switch (error.toString()) {
+                    case "401":
+                        //this.unauthorized = true;
+                        break;
+                    case "404":
+                        //this.notFound = true;
+                        break;
+                    default:
+                        console.log('account info get user error: ' + error);
+                        break;
+                }
+            });
+    }
+
+    goOrders() {
+    }
+
+    goProfile() {
+        this.router.parent.navigateByUrl('/profile');
+    }
+
+    goAddress() {
     }
 }

@@ -1,4 +1,4 @@
-<div>
+<!--<div>
     <div class="home jumbotron centered">
         <h2>Account Info</h2>
         <h3 *ngIf="jwt">Your JWT is:</h3>
@@ -10,5 +10,57 @@
         <p><a class="btn btn-primary btn-lg" role="button" (click)="logout()">Logout</a></p>
         <h2 *ngIf="response">The response of calling the <span class="red"></span> API is:</h2>
         <h3 *ngIf="response">{{response}}</h3>
+    </div>
+</div>-->
+<div class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <h2>Your Account</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Orders</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-tall">
+                            <p>{{recentPurchases}}</p>
+                        </div>
+                        <button type="button" class="btn btn-default anime-button" 
+                                (click)="goOrders()">View Recent Orders</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Profile Settings</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-tall">
+                            <strong>{{userAccount.FirstName}} {{userAccount.LastName}}</strong>
+                            <div>{{userAccount.Email}}</div>
+                            <div>{{userAccount.CellPhone}}</div>
+                            <p></p>
+                        </div>
+                        <button type="button" class="btn btn-default anime-button" 
+                                (click)="goProfile()">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Address Book</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-tall">
+                            <p>{{addressBook}}</p>
+                        </div>
+                        <button type="button" class="btn btn-default anime-button" 
+                                (click)="goAddress()">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

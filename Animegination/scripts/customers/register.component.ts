@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
     registerForm: ControlGroup;
 
-    token: TokenModel = { "token": "" };
+    token: TokenModel = { token: "" };
     registerInput: RegisterModel = {
         UserId: "",
         Username: "",

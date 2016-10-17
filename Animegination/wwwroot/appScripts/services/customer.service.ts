@@ -4,6 +4,7 @@ import { TokenModel } from '../models/tokenmodel';
 import { RegisterModel } from '../models/registermodel';
 import { LoginModel } from '../models/loginmodel';
 import { UserReturnModel } from '../models/userReturnModel';
+import { UserAccountModel } from '../models/userAccountModel';
 
 @Injectable()
 export class CustomerService {
@@ -86,4 +87,34 @@ export class CustomerService {
                 );
         })
     }
+
+    getUser(token: TokenModel) {
+        return new Promise((resolve, reject) => {
+            this._apiService.getUserAccount(token)
+                .subscribe(
+                (data: UserAccountModel) => {
+                    resolve(data);
+                }
+                ,
+                error => { console.log('get user error: ' + error); reject(error); },
+                () => console.log("Api Get User seikoo")
+                );
+        })
+    }
+
+    updateUserAccount(token: TokenModel, userAccountModel: UserAccountModel) {
+        return new Promise((resolve, reject) => {
+            this._apiService.putUserAccount(token, userAccountModel)
+                .subscribe(
+                (data: UserAccountModel) => {
+                    resolve(data);
+                },
+                error => {
+                    console.log('update user account error: ' + error); reject(error);
+                },
+                () => console.log("Api Update User Account seikoo")
+                );
+        })
+    }
+
 }
