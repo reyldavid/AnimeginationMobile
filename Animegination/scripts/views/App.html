@@ -72,11 +72,19 @@
                     <li><a [routerLink]="['About']">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a [routerLink]="['Login']">Sign in</a></li>
-                    <li><a [routerLink]="['Register']">Register</a></li>
-                    <li><a [routerLink]="['Orders']">Your Orders</a></li>
+                    <li *ngIf="userFirstName"><a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                                                 role="button" aria-haspopup="true" aria-expanded="false">
+                        Hello, <span class="anime-color">{{userFirstName}}</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li (click)="logout()"><a [routerLink]="['Login']">Sign Out</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a [routerLink]="['Orders']">Your Orders</a></li>
+                            <li><a [routerLink]="['AccountInfo']">Your Account</a></li>
+                        </ul>
+                    </li>
+                    <li *ngIf="!userFirstName"><a [routerLink]="['Login']">Sign in</a></li>
+                    <!--<li><a [routerLink]="['Orders']">Your Orders</a></li>-->
                     <li><a [routerLink]="['AccountInfo']">Your Account</a></li>
-                    <li><a [routerLink]="['Settings']">Your Settings</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

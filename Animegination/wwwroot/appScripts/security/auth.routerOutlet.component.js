@@ -45,7 +45,7 @@ var AuthRouterOutlet = (function (_super) {
     AuthRouterOutlet.prototype.activate = function (instruction) {
         var url = instruction.urlPath;
         console.log('router url: ' + url);
-        console.log('jwt: ' + localStorage.getItem('jwt'));
+        //console.log('jwt: ' + localStorage.getItem('jwt'));
         if (!url.includes('slice') && !url.includes('genre') && !url.includes('detail')) {
             if (!this.publicRoutes[url] && !localStorage.getItem('jwt')) {
                 this.parentRouter.navigateByUrl('/login');

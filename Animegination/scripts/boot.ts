@@ -9,6 +9,7 @@ import {FORM_PROVIDERS} from '@angular/common';
 import {APP_BASE_HREF} from '@angular/common';
 import {LocationStrategy, HashLocationStrategy, PathLocationStrategy} from '@angular/common';
 import {AuthConfig, AuthHttp} from 'angular2-jwt';
+import {Globals} from './services/globals';
 
 bootstrap(
     AppComponent,
@@ -16,6 +17,7 @@ bootstrap(
         FORM_PROVIDERS,
         ROUTER_PROVIDERS,
         HTTP_PROVIDERS,
+        Globals,
         provide(APP_BASE_HREF, { useValue: '/' }),
         provide(LocationStrategy, { useClass: HashLocationStrategy }),
         provide(AuthHttp, {

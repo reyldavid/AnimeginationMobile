@@ -33,8 +33,6 @@ var LoginComponent = (function () {
             .then(function (token) {
             _this.token = token;
             localStorage.setItem('jwt', _this.token.token);
-            console.log('aya login token: ');
-            console.log(_this.token.token);
             _this.router.parent.navigateByUrl('/account');
         })
             .catch(function (error) {
@@ -47,7 +45,7 @@ var LoginComponent = (function () {
                     break;
             }
         });
-        //this.http.post('http://localhost:3001/sessions/create',
+        //this.http.post( this._globals.localHostUrl + 'sessions/create',
         //    body, { headers: contentHeaders })
         //    .subscribe(
         //    response => {

@@ -10,10 +10,12 @@ var common_1 = require('@angular/common');
 var common_2 = require('@angular/common');
 var common_3 = require('@angular/common');
 var angular2_jwt_1 = require('angular2-jwt');
+var globals_1 = require('./services/globals');
 platform_browser_dynamic_1.bootstrap(app_1.AppComponent, [
     common_1.FORM_PROVIDERS,
     router_deprecated_1.ROUTER_PROVIDERS,
     http_1.HTTP_PROVIDERS,
+    globals_1.Globals,
     core_1.provide(common_2.APP_BASE_HREF, { useValue: '/' }),
     core_1.provide(common_3.LocationStrategy, { useClass: common_3.HashLocationStrategy }),
     core_1.provide(angular2_jwt_1.AuthHttp, {

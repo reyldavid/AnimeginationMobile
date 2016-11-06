@@ -6,6 +6,7 @@ export interface UserAccountModel {
     Address: string,
     City: string,
     State: string,
+    StateId: number;
     ZipCode: string,
     CellPhone: string,
     HomePhone: string,

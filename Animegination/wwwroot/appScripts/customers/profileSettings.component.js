@@ -15,6 +15,7 @@ var http_1 = require('@angular/http');
 var customer_service_1 = require('../services/customer.service');
 var anime_api_service_1 = require('../services/anime.api.service');
 var common_2 = require('@angular/common');
+var phonePipe_1 = require('../helpers/phonePipe');
 var ProfileSettingsComponent = (function () {
     function ProfileSettingsComponent(router, http, _customerService, _apiService, _formBuilder) {
         this.router = router;
@@ -26,7 +27,7 @@ var ProfileSettingsComponent = (function () {
         this.profileInput = {
             UserId: "", UserName: "",
             FirstName: "", LastName: "",
-            Address: "", City: "", State: "", ZipCode: "",
+            Address: "", City: "", State: "", StateId: 0, ZipCode: "",
             CellPhone: "", HomePhone: "",
             Email: "", Created: "",
             CreditCardType: "", CreditCardNumber: "", CreditCardExpiration: ""
@@ -58,8 +59,7 @@ var ProfileSettingsComponent = (function () {
         var _this = this;
         this.isSuccess = null;
         this.isFailure = null;
-        console.log('aya Update Profile Settings');
-        this._customerService.updateUserAccount(this.token, this.profileInput)
+        this._customerService.updateUserAccountNames(this.token, this.profileInput)
             .then(function (userAccount) {
             _this.profileInput.FirstName = userAccount.firstName;
             _this.profileInput.LastName = userAccount.lastName;
@@ -88,7 +88,8 @@ var ProfileSettingsComponent = (function () {
             selector: 'profile',
             templateUrl: './views/profileSettings.html',
             providers: [customer_service_1.CustomerService, anime_api_service_1.ApiService],
-            directives: [common_1.CORE_DIRECTIVES, common_1.FORM_DIRECTIVES, router_deprecated_1.RouterLink]
+            directives: [common_1.CORE_DIRECTIVES, common_1.FORM_DIRECTIVES, router_deprecated_1.RouterLink],
+            pipes: [phonePipe_1.phonePipe]
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router, http_1.Http, customer_service_1.CustomerService, anime_api_service_1.ApiService, common_2.FormBuilder])
     ], ProfileSettingsComponent);

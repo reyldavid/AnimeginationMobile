@@ -3,7 +3,7 @@
     userName: string,
     firstName: string,
     lastName: string,
-    address: string,
+    streetAddress: string,
     city: string,
     state: string,
     zipCode: string,

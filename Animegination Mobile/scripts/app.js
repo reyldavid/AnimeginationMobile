@@ -30,11 +30,15 @@ var newsFeed_component_1 = require('./customers/newsFeed.component');
 var searchResults_component_1 = require('./products/searchResults.component');
 var categoryList_component_1 = require('./products/categoryList.component');
 var profileSettings_component_1 = require('./customers/profileSettings.component');
+var addressSettings_component_1 = require('./customers/addressSettings.component');
 var auth_routerOutlet_component_1 = require('./security/auth.routerOutlet.component');
+var login_service_1 = require('./services/login.service');
 var AppComponent = (function () {
-    //selectedProduct: ApiProduct;
-    function AppComponent(_router) {
+    function AppComponent(_router, _loginService) {
+        var _this = this;
         this._router = _router;
+        this._loginService = _loginService;
+        _loginService.userLoggedIn.subscribe(function (firstName) { return _this.onUserLogin(firstName); });
     }
     AppComponent.prototype.ngOnInit = function () {
         console.log('app init');
@@ -48,11 +52,21 @@ var AppComponent = (function () {
         console.log('onSearch ' + searchText);
         this._router.navigate(['Search', { searchText: searchText }]);
     };
+    AppComponent.prototype.onUserLogin = function (userFirstName) {
+        console.log('aya onUserLogin: ' + userFirstName);
+        this.userFirstName = userFirstName;
+    };
+    AppComponent.prototype.logout = function () {
+        // Logging out means just deleting the JWT from localStorage and redirecting the user to the Login page
+        localStorage.removeItem('jwt');
+        this.userFirstName = '';
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'aya-app',
             templateUrl: './views/App.html',
-            directives: [auth_routerOutlet_component_1.AuthRouterOutlet, router_deprecated_2.RouterLink] // directives: [ROUTER_DIRECTIVES]
+            directives: [auth_routerOutlet_component_1.AuthRouterOutlet, router_deprecated_2.RouterLink],
+            providers: [login_service_1.LoginService]
         }),
         router_deprecated_1.RouteConfig([
             //        { path: '/', name: 'Home', component: HomeComponent, useAsDefault: true },
@@ -72,9 +86,10 @@ var AppComponent = (function () {
             { path: '/cart', name: 'Cart', component: shoppingCart_component_1.ShoppingCartComponent },
             { path: '/search', name: 'Search', component: searchResults_component_1.SearchResultsComponent },
             { path: '/genre:/categoryID/', name: 'CategoryList', component: categoryList_component_1.CategoryListComponent },
-            { path: '/profile', name: 'ProfileSettings', component: profileSettings_component_1.ProfileSettingsComponent }
+            { path: '/profile', name: 'ProfileSettings', component: profileSettings_component_1.ProfileSettingsComponent },
+            { path: '/address', name: 'Address', component: addressSettings_component_1.AddressSettingsComponent }
         ]), 
-        __metadata('design:paramtypes', [router_deprecated_1.Router])
+        __metadata('design:paramtypes', [router_deprecated_1.Router, login_service_1.LoginService])
     ], AppComponent);
     return AppComponent;
 }());

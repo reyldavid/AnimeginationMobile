@@ -14,12 +14,14 @@ import { Validators } from '@angular/common';
 import { ProfileSettings } from '../models/profileSettingsModel';
 import { UserAccountModel } from '../models/userAccountModel';
 import { UserAccountReturnModel } from '../models/userAccountReturnModel';
+import { phonePipe } from '../helpers/phonePipe';
 
 @Component({
     selector: 'profile',
     templateUrl: './views/profileSettings.html',
     providers: [CustomerService, ApiService],
-    directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, RouterLink]
+    directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, RouterLink],
+    pipes: [phonePipe]
 })
 
 export class ProfileSettingsComponent implements OnInit {
@@ -32,7 +34,7 @@ export class ProfileSettingsComponent implements OnInit {
     profileInput: UserAccountModel = {
         UserId: "", UserName: "",
         FirstName: "", LastName: "",
-        Address: "", City: "", State: "", ZipCode: "",
+        Address: "", City: "", State: "", StateId: 0, ZipCode: "",
         CellPhone: "", HomePhone: "",
         Email: "", Created: "",
         CreditCardType: "", CreditCardNumber: "", CreditCardExpiration: ""
@@ -73,9 +75,7 @@ export class ProfileSettingsComponent implements OnInit {
         this.isSuccess = null;
         this.isFailure = null;
 
-        console.log('aya Update Profile Settings');
-
-        this._customerService.updateUserAccount(this.token, this.profileInput)
+        this._customerService.updateUserAccountNames(this.token, this.profileInput)
             .then((userAccount: UserAccountReturnModel) => {
                 this.profileInput.FirstName = userAccount.firstName;
                 this.profileInput.LastName = userAccount.lastName;
@@ -100,4 +100,3 @@ export class ProfileSettingsComponent implements OnInit {
             });
     }
 }
-

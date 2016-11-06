@@ -40,9 +40,6 @@ export class LoginComponent implements OnInit {
                 this.token = token;
                 localStorage.setItem('jwt', this.token.token);
 
-                console.log('aya login token: ');
-                console.log(this.token.token);
-
                 this.router.parent.navigateByUrl('/account');
             })
             .catch((error: string) => {
@@ -56,7 +53,7 @@ export class LoginComponent implements OnInit {
                 }
             });
 
-        //this.http.post('http://localhost:3001/sessions/create',
+        //this.http.post( this._globals.localHostUrl + 'sessions/create',
         //    body, { headers: contentHeaders })
         //    .subscribe(
         //    response => {

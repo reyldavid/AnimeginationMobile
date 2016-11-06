@@ -40,7 +40,7 @@ export class AuthRouterOutlet extends RouterOutlet {
     activate(instruction: ComponentInstruction) {
         let url = instruction.urlPath;
         console.log('router url: ' + url);
-        console.log('jwt: ' + localStorage.getItem('jwt'));
+        //console.log('jwt: ' + localStorage.getItem('jwt'));
 
         if (!url.includes('slice') && !url.includes('genre') && !url.includes('detail') ) {
             if (!this.publicRoutes[url] && !localStorage.getItem('jwt')) {

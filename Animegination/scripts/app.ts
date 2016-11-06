@@ -21,13 +21,16 @@ import {NewsFeedComponent} from './customers/newsFeed.component';
 import {SearchResultsComponent} from './products/searchResults.component';
 import {CategoryListComponent} from './products/categoryList.component';
 import {ProfileSettingsComponent} from './customers/profileSettings.component';
+import {AddressSettingsComponent} from './customers/addressSettings.component';
 import {OnInit} from '@angular/core';
 import {AuthRouterOutlet} from './security/auth.routerOutlet.component';
+import {LoginService} from './services/login.service';
 
 @Component({
     selector: 'aya-app',
     templateUrl: './views/App.html',
-    directives: [AuthRouterOutlet, RouterLink]  // directives: [ROUTER_DIRECTIVES]
+    directives: [AuthRouterOutlet, RouterLink], // directives: [ROUTER_DIRECTIVES]
+    providers: [LoginService]
 })
 @RouteConfig([
     //        { path: '/', name: 'Home', component: HomeComponent, useAsDefault: true },
@@ -47,13 +50,17 @@ import {AuthRouterOutlet} from './security/auth.routerOutlet.component';
     { path: '/cart', name: 'Cart', component: ShoppingCartComponent },
     { path: '/search', name: 'Search', component: SearchResultsComponent },
     { path: '/genre:/categoryID/', name: 'CategoryList', component: CategoryListComponent },
-    { path: '/profile', name: 'ProfileSettings', component: ProfileSettingsComponent }
+    { path: '/profile', name: 'ProfileSettings', component: ProfileSettingsComponent },
+    { path: '/address', name: 'Address', component: AddressSettingsComponent }
 ])
 
 export class AppComponent implements OnInit {
     //selectedProduct: ApiProduct;
 
-    constructor(private _router: Router) {
+    public userFirstName: string;
+
+    constructor(private _router: Router, private _loginService: LoginService) {
+        _loginService.userLoggedIn.subscribe(firstName => this.onUserLogin(firstName));
     }
 
     ngOnInit(): any {
@@ -69,6 +76,18 @@ export class AppComponent implements OnInit {
     onSearch(searchText: string) {
         console.log('onSearch ' + searchText);
         this._router.navigate(['Search', { searchText: searchText } ]);
+    }
+
+    onUserLogin(userFirstName: string) {
+        console.log('aya onUserLogin: ' + userFirstName);
+
+        this.userFirstName = userFirstName;
+    }
+
+    logout() {
+        // Logging out means just deleting the JWT from localStorage and redirecting the user to the Login page
+        localStorage.removeItem('jwt');
+        this.userFirstName = '';
     }
 
     //OnLiClick(itemName: string) {
@@ -89,5 +108,3 @@ export class AppComponent implements OnInit {
     //    }
     //}
 }
-
-

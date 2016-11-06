@@ -10,13 +10,15 @@ import {RegisterModel} from '../models/registermodel';
 import {LoginModel} from '../models/loginmodel';
 import {UserReturnModel} from '../models/userReturnModel';
 import {UserAccountModel} from '../models/userAccountModel';
+import {States} from '../models/states';
 import {contentHeaders} from '../services/headers';
+import {Globals} from './globals';
 import 'rxjs/Rx';
 //import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ApiService {
-    constructor (private _http: Http) {
+    constructor (private _http: Http, private _globals: Globals) {
     }
     claim: ClaimModel;
     token: TokenModel;
@@ -59,7 +61,7 @@ export class ApiService {
 
     getAnimeListType(listTypeID: number): Observable<ListType> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/listtypes/" + listTypeID,
+        var result = this._http.get(this._globals.azureHostUrl + "listtypes/" + listTypeID,
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -69,7 +71,7 @@ export class ApiService {
 
     getAnimeProduct(productID: string): Observable<ApiProduct> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/products/" + productID,
+        var result = this._http.get(this._globals.azureHostUrl + "products/" + productID,
             { headers: contentHeaders })
             .map(this.extractFirst)
             .catch(this.handleError);
@@ -79,7 +81,7 @@ export class ApiService {
 
     getAnimeProducts(): Observable<ApiProduct[]> {
         
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/products",
+        var result = this._http.get(this._globals.azureHostUrl + "products",
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -89,7 +91,7 @@ export class ApiService {
 
     getAnimeListing(listTypeID: number): Observable<ApiProduct[]> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/Listings/" + listTypeID,
+        var result = this._http.get(this._globals.azureHostUrl + "Listings/" + listTypeID,
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -105,7 +107,7 @@ export class ApiService {
 
     getSimilarsListing(productID: number): Observable<ApiProduct[]> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/similars/" + productID,
+        var result = this._http.get(this._globals.azureHostUrl + "similars/" + productID,
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -115,7 +117,7 @@ export class ApiService {
 
     getSearchResults(searchText: string): Observable<ApiProduct[]> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/search/" + searchText,
+        var result = this._http.get(this._globals.azureHostUrl + "search/" + searchText,
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -125,7 +127,7 @@ export class ApiService {
 
     getCategory(categoryID: string): Observable<Category> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/categories/" + categoryID,
+        var result = this._http.get(this._globals.azureHostUrl + "categories/" + categoryID,
             { headers: contentHeaders })
             .map(this.extractFirst)
             .catch(this.handleError);
@@ -135,7 +137,7 @@ export class ApiService {
 
     getCategories(): Observable<Category[]> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/categories",
+        var result = this._http.get(this._globals.azureHostUrl + "categories",
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -145,7 +147,7 @@ export class ApiService {
 
     getCategoryList(categoryID: string): Observable<ApiProduct[]> {
 
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/categorylist/" + categoryID,
+        var result = this._http.get(this._globals.azureHostUrl + "categorylist/" + categoryID,
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -156,7 +158,7 @@ export class ApiService {
     userLogin(username: string, password: string): Observable<TokenModel> {
         let body = JSON.stringify({ username, password });
 
-        var result = this._http.post("https://animegination2.azurewebsites.net/api/accounts/login",
+        var result = this._http.post(this._globals.azureHostUrl + "accounts/login",
             body, { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -167,7 +169,7 @@ export class ApiService {
     createUser(registerModel: RegisterModel): Observable<UserReturnModel> {
         let body = JSON.stringify(registerModel);
 
-        var result = this._http.post("https://animegination2.azurewebsites.net/api/accounts/create",
+        var result = this._http.post(this._globals.azureHostUrl + "accounts/create",
             body, { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -178,7 +180,7 @@ export class ApiService {
     createUserAccount(registerModel: RegisterModel): Observable<TokenModel> {
         let body = JSON.stringify(registerModel);
 
-        var result = this._http.post("https://animegination2.azurewebsites.net/api/useraccounts",
+        var result = this._http.post(this._globals.azureHostUrl + "useraccounts",
             body, { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -189,8 +191,8 @@ export class ApiService {
     getUserAccount(token: TokenModel): Observable<UserAccountModel> {
         contentHeaders.set("JWTToken", token.token);
 
-        //var result = this._http.get("http://localhost:65164/api/useraccounts/",
-        var result = this._http.get("https://animegination2.azurewebsites.net/api/useraccounts/",
+        //var result = this._http.get(this._globals.localHostUrl + "useraccounts/",
+        var result = this._http.get(this._globals.azureHostUrl + "useraccounts/",
             { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
@@ -198,14 +200,38 @@ export class ApiService {
         return result;
     }
 
-    putUserAccount(token: TokenModel, userAccount: UserAccountModel): Observable<UserAccountModel> {
+    putUserAccountNames(token: TokenModel, userAccount: UserAccountModel): Observable<UserAccountModel> {
 
         contentHeaders.set("JWTToken", token.token);
         let body = JSON.stringify(userAccount);
 
-        //var result = this._http.put("http://localhost:65164/api/useraccounts/names",
-        var result = this._http.put("https://animegination2.azurewebsites.net/api/useraccounts/names",
+        //var result = this._http.put(this._globals.localHostUrl + "useraccounts/names",
+        var result = this._http.put(this._globals.azureHostUrl + "useraccounts/names",
             body, { headers: contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+
+        return result;
+    }
+
+    putUserAccountAddress(token: TokenModel, userAccount: UserAccountModel): Observable<UserAccountModel> {
+
+        contentHeaders.set("JWTToken", token.token);
+        let body = JSON.stringify(userAccount);
+
+        //var result = this._http.put(this._globals.localHostUrl + "useraccounts/names",
+        var result = this._http.put(this._globals.azureHostUrl + "useraccounts/address",
+            body, { headers: contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+
+        return result;
+    }
+
+    getStates(): Observable<States[]> {
+
+        var result = this._http.get(this._globals.azureHostUrl + "states",
+            { headers: contentHeaders })
             .map(this.extractData)
             .catch(this.handleError);
 

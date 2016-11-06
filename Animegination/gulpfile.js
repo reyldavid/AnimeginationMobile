@@ -177,6 +177,10 @@ gulp.task('copyToAnime', function (done) {
         getPaths().appScripts + 'security/*.js'
     ]).pipe(gulp.dest(getPaths().animeScripts + 'security'));
 
+    gulp.src([
+        getPaths().appScripts + 'helpers/*.js'
+    ]).pipe(gulp.dest(getPaths().animeScripts + 'helpers'));
+
 });
 
 // clean all the generated typescript files

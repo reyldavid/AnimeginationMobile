@@ -15,19 +15,23 @@ var router_deprecated_1 = require('@angular/router-deprecated');
 var angular2_jwt_1 = require('angular2-jwt');
 var anime_api_service_1 = require('../services/anime.api.service');
 var customer_service_1 = require('../services/customer.service');
+var globals_1 = require('../services/globals');
+var login_service_1 = require('../services/login.service');
 var AccountInfoComponent = (function () {
-    function AccountInfoComponent(router, http, authHttp, _customerService) {
+    function AccountInfoComponent(router, http, authHttp, _customerService, _globals, _loginService) {
         this.router = router;
         this.http = http;
         this.authHttp = authHttp;
         this._customerService = _customerService;
+        this._globals = _globals;
+        this._loginService = _loginService;
         // Here we define this component's instance variables
         // They're accessible from the template
         this.token = { token: "" };
         this.userAccount = {
             UserId: "", UserName: "",
             FirstName: "", LastName: "",
-            Address: "", City: "", State: "", ZipCode: "",
+            Address: "", City: "", State: "", StateId: 0, ZipCode: "",
             CellPhone: "", HomePhone: "",
             Email: "", Created: "",
             CreditCardType: "", CreditCardNumber: "", CreditCardExpiration: ""
@@ -45,12 +49,12 @@ var AccountInfoComponent = (function () {
         this.router.parent.navigateByUrl('/login');
     };
     AccountInfoComponent.prototype.callAnonymousApi = function () {
-        //        this._callApi('Anonymous', 'http://localhost:3001/api/random-quote');
+        //        this._callApi('Anonymous', this._globals.localHostUrl + 'random-quote');
         console.log('Call Anonymous API');
     };
     AccountInfoComponent.prototype.callSecuredApi = function () {
         // We call the secured API
-        //        this._callApi('Secured', 'http://localhost:3001/api/protected/random-quote');
+        //        this._callApi('Secured', this._globals.localHostUrl + 'protected/random-quote');
         console.log('Call Secured API');
     };
     AccountInfoComponent.prototype._callApi = function (type, url) {
@@ -71,13 +75,16 @@ var AccountInfoComponent = (function () {
         var _this = this;
         console.log('account info init');
         this.recentPurchases = 'You Don\'t Have Any Purchases In Your Account Right Now';
-        this.addressBook = 'We have no default address on file for this account';
+        this.missingAddressBook = 'We have no default address on file for this account';
+        this.incompleteAddressBook = "The default address on file is incomplete";
         //this.userFullName = 'Aya Ueto';
         //this.userEmail = 'ayaueto@anime.com';
         //this.userPhone = '(925)984-2849';
         this._customerService.getUser(this.token)
             .then(function (userAccount) {
             _this.userAccount = userAccount;
+            console.log('aya login firstName: ' + userAccount.FirstName);
+            _this._loginService.login(userAccount.FirstName);
         })
             .catch(function (error) {
             switch (error.toString()) {
@@ -99,6 +106,7 @@ var AccountInfoComponent = (function () {
         this.router.parent.navigateByUrl('/profile');
     };
     AccountInfoComponent.prototype.goAddress = function () {
+        this.router.parent.navigateByUrl('/address');
     };
     AccountInfoComponent = __decorate([
         core_1.Component({
@@ -107,7 +115,7 @@ var AccountInfoComponent = (function () {
             directives: [common_1.CORE_DIRECTIVES],
             providers: [customer_service_1.CustomerService, anime_api_service_1.ApiService]
         }), 
-        __metadata('design:paramtypes', [router_deprecated_1.Router, http_1.Http, angular2_jwt_1.AuthHttp, customer_service_1.CustomerService])
+        __metadata('design:paramtypes', [router_deprecated_1.Router, http_1.Http, angular2_jwt_1.AuthHttp, customer_service_1.CustomerService, globals_1.Globals, login_service_1.LoginService])
     ], AccountInfoComponent);
     return AccountInfoComponent;
 }());

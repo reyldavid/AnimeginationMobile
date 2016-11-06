@@ -5,6 +5,7 @@ import { RegisterModel } from '../models/registermodel';
 import { LoginModel } from '../models/loginmodel';
 import { UserReturnModel } from '../models/userReturnModel';
 import { UserAccountModel } from '../models/userAccountModel';
+import { States } from '../models/states';
 
 @Injectable()
 export class CustomerService {
@@ -102,9 +103,9 @@ export class CustomerService {
         })
     }
 
-    updateUserAccount(token: TokenModel, userAccountModel: UserAccountModel) {
+    updateUserAccountNames(token: TokenModel, userAccountModel: UserAccountModel) {
         return new Promise((resolve, reject) => {
-            this._apiService.putUserAccount(token, userAccountModel)
+            this._apiService.putUserAccountNames(token, userAccountModel)
                 .subscribe(
                 (data: UserAccountModel) => {
                     resolve(data);
@@ -115,6 +116,32 @@ export class CustomerService {
                 () => console.log("Api Update User Account seikoo")
                 );
         })
+    }
+
+    updateUserAccountAddress(token: TokenModel, userAccountModel: UserAccountModel) {
+        return new Promise((resolve, reject) => {
+            this._apiService.putUserAccountAddress(token, userAccountModel)
+                .subscribe(
+                (data: UserAccountModel) => {
+                    resolve(data);
+                },
+                error => {
+                    console.log('update user address error: ' + error); reject(error);
+                },
+                () => console.log("Api Update User Address seikoo")
+                );
+        })
+    }
+
+    getStates() {
+        return new Promise(resolve => {
+            this._apiService.getStates()
+                .subscribe(
+                (data: States[]) => resolve(data),
+                error => alert(error),
+                () => console.log("Api States seikoo")
+                );
+        });
     }
 
 }

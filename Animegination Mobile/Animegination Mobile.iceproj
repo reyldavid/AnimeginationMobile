@@ -2771,6 +2771,12 @@
     <Content Include="scripts\customers\aboutUs.component.js" />
     <Content Include="scripts\customers\accountInfo.component.js" />
     <Content Include="scripts\customers\accountSettings.component.js" />
+    <Content Include="scripts\customers\addressSettings.component.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\customers\addressSettings.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\customers\contactUs.component.js" />
     <Content Include="scripts\customers\login.component.js" />
     <Content Include="scripts\customers\newsFeed.component.js" />
@@ -2780,7 +2786,22 @@
     </Content>
     <Content Include="scripts\customers\register.component.js" />
     <Content Include="scripts\customers\shoppingCart.component.js" />
+    <Content Include="scripts\customers\views\shoppingCart.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\customers\views\statesDropDown.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\helpers\phonePipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\helpers\statesDropDown.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\index.js" />
+    <Content Include="scripts\models\addressModel.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\models\category.js" />
     <Content Include="scripts\models\claimmodel.js">
       <SubType>Content</SubType>
@@ -2798,6 +2819,9 @@
     <Content Include="scripts\models\publisher.js" />
     <Content Include="scripts\models\rating.js" />
     <Content Include="scripts\models\registermodel.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\models\states.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\models\tokenmodel.js">
@@ -2833,6 +2857,9 @@
     </Content>
     <Content Include="scripts\products\views\accountInfo.html" />
     <Content Include="scripts\products\views\accountSettings.html" />
+    <Content Include="scripts\products\views\addressSettings.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\products\views\App.html" />
     <Content Include="scripts\products\views\categories.html" />
     <Content Include="scripts\products\views\categoryList.html">
@@ -2857,6 +2884,9 @@
     <Content Include="scripts\products\views\similarsList.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\products\views\statesDropDown.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\security\auth.routerOutlet.component.js">
       <SubType>Content</SubType>
     </Content>
@@ -2864,7 +2894,13 @@
     <Content Include="scripts\services\customer.service.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\services\globals.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\services\headers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\services\login.service.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\services\product.service.js" />
@@ -2925,9 +2961,13 @@
     <Content Include="scripts\views\similarsList.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\views\statesDropDown.html" />
     <Content Include="views\aboutUs.html" />
     <Content Include="views\accountInfo.html" />
     <Content Include="views\accountSettings.html" />
+    <Content Include="views\addressSettings.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\App.html" />
     <Content Include="views\categories.html" />
     <Content Include="views\categoryList.html">
@@ -2950,6 +2990,9 @@
     </Content>
     <Content Include="views\shoppingCart.html" />
     <Content Include="views\similarsList.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\statesDropDown.html">
       <SubType>Content</SubType>
     </Content>
     <None Include=".abignore" />
@@ -3164,6 +3207,8 @@
     <Folder Include="libs\angular2-jwt\typings\main\ambient\" />
     <Folder Include="libs\angular2-jwt\typings\main\ambient\es6-shim\" />
     <Folder Include="scripts\customers\" />
+    <Folder Include="scripts\customers\views\" />
+    <Folder Include="scripts\helpers\" />
     <Folder Include="scripts\models\" />
     <Folder Include="scripts\security\" />
     <Folder Include="scripts\views\" />

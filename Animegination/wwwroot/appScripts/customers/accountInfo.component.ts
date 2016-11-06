@@ -8,6 +8,8 @@ import { ApiService } from '../services/anime.api.service';
 import { CustomerService } from '../services/customer.service';
 import { TokenModel } from '../models/tokenModel';
 import { UserAccountModel } from '../models/userAccountModel';
+import { Globals } from '../services/globals';
+import { LoginService } from '../services/login.service';
 
 @Component({
     selector: 'accountInfo',
@@ -24,21 +26,24 @@ export class AccountInfoComponent implements OnInit {
     userAccount: UserAccountModel = {
         UserId: "", UserName: "",
         FirstName: "", LastName: "",
-        Address: "", City: "", State: "", ZipCode: "",
+        Address: "", City: "", State: "", StateId: 0, ZipCode: "",
         CellPhone: "", HomePhone: "",
         Email: "", Created: "",
         CreditCardType: "", CreditCardNumber: "", CreditCardExpiration: ""
     };
     response: string;
     recentPurchases: string;
-    addressBook: string;
+    missingAddressBook: string;
+    incompleteAddressBook: string;
     userFullName: string;
     userEmail: string;
     userPhone: string;
 
     constructor(public router: Router, public http: Http,
         public authHttp: AuthHttp,
-        private _customerService: CustomerService)
+        private _customerService: CustomerService,
+        private _globals: Globals,
+        private _loginService: LoginService)
     {
         console.log('account info construct');
         // We get the JWT from localStorage
@@ -55,13 +60,13 @@ export class AccountInfoComponent implements OnInit {
     }
 
     callAnonymousApi() {
-//        this._callApi('Anonymous', 'http://localhost:3001/api/random-quote');
+//        this._callApi('Anonymous', this._globals.localHostUrl + 'random-quote');
         console.log('Call Anonymous API');
     }
 
     callSecuredApi() {
         // We call the secured API
-//        this._callApi('Secured', 'http://localhost:3001/api/protected/random-quote');
+//        this._callApi('Secured', this._globals.localHostUrl + 'protected/random-quote');
         console.log('Call Secured API');
     }
 
@@ -88,7 +93,8 @@ export class AccountInfoComponent implements OnInit {
     ngOnInit(): any {
         console.log('account info init');
         this.recentPurchases = 'You Don\'t Have Any Purchases In Your Account Right Now';
-        this.addressBook = 'We have no default address on file for this account';
+        this.missingAddressBook = 'We have no default address on file for this account';
+        this.incompleteAddressBook = "The default address on file is incomplete";
         //this.userFullName = 'Aya Ueto';
         //this.userEmail = 'ayaueto@anime.com';
         //this.userPhone = '(925)984-2849';
@@ -96,6 +102,10 @@ export class AccountInfoComponent implements OnInit {
         this._customerService.getUser(this.token)
             .then((userAccount: UserAccountModel) => {
                 this.userAccount = userAccount;
+
+                console.log('aya login firstName: ' + userAccount.FirstName);
+
+                this._loginService.login(userAccount.FirstName);
             })
             .catch((error: string) => {
                 switch (error.toString()) {
@@ -120,5 +130,6 @@ export class AccountInfoComponent implements OnInit {
     }
 
     goAddress() {
+        this.router.parent.navigateByUrl('/address');
     }
 }
