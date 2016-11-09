@@ -155,6 +155,10 @@ gulp.task('copyToAnime', function (done) {
 
     gulp.src([
         'scripts/views/*.html'
+    ]).pipe(gulp.dest(getPaths().animeScripts + 'views'));
+
+    gulp.src([
+        'scripts/views/*.html'
     ]).pipe(gulp.dest(getPaths().animeScripts + 'products/views'));
 
     gulp.src([

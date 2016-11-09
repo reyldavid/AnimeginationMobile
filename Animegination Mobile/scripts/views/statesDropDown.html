@@ -1,5 +1,5 @@
 <select (change)="selectItem($event.target.value)" class="form-control" id="state">
-    <option *ngFor="let state of states" value={{state.StateID}} [selected]="state.StateName == defaultState">
+    <option *ngFor="#state of states" value={{state.StateID}} [selected]="state.StateName == defaultState">
         {{state.StateName}}
     </option>
 </select>

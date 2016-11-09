@@ -11,7 +11,7 @@ import { States } from '../models/states';
 
 @Component({
     selector: 'states',
-    templateUrl: '../views/statesDropDown.html', 
+    templateUrl: '../views/statesDropDown.html',
     //template: 
     //    `<select (change)="selectItem($event.target.value)" class="form-control" id="state">
     //        <option *ngFor="#state of states" value={{state.StateID}} [selected]="state.StateName == defaultState">

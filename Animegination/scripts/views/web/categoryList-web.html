@@ -1,0 +1,30 @@
+﻿<h3><strong>{{category?.Description}}</strong></h3>
+<ul class="list-inline">
+    <li *ngFor="let prod of apiProducts"
+        (click)="OnSelectProduct(prod)">
+        <a>
+            <div class="thumbnail" style="max-width: 160px;">
+                <img src="https://reydavid.blob.core.windows.net/anime/{{prod?.ProductCode}}.jpg"
+                     alt="{{prod?.ProductCode}}" style="max-width: 130px" />
+                <div class="caption">
+                    <div>{{prod?.ProductTitle}}</div>
+                    <img src="https://reydavid.blob.core.windows.net/assets/Rating {{prod?.RatingID}} Stars.png"
+                         alt="{{prod?.RatingID}} stars" style="max-width: 100px;" />
+
+                    <div>
+                        <table>
+                            <tr>
+                                <td>List Price: </td>
+                                <td><s>{{prod?.UnitPrice | currency:'USD':true }} </s></td>
+                            </tr>
+                            <tr>
+                                <td>Your Price:</td>
+                                <td><strong><span class="text-danger">{{prod?.YourPrice | currency:'USD':true }} </span></strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>

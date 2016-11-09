@@ -38,8 +38,13 @@ var StatesDropDownComponent = (function () {
     StatesDropDownComponent = __decorate([
         core_1.Component({
             selector: 'states',
-            //templateUrl: '../views/statesDropDown.html', 
-            template: "<select (change)=\"selectItem($event.target.value)\" class=\"form-control\" id=\"state\">\n            <option *ngFor=\"#state of states\" value={{state.StateID}} [selected]=\"state.StateName == defaultState\">\n                {{state.StateName}}\n            </option>\n         </select>",
+            templateUrl: '../views/statesDropDown.html',
+            //template: 
+            //    `<select (change)="selectItem($event.target.value)" class="form-control" id="state">
+            //        <option *ngFor="#state of states" value={{state.StateID}} [selected]="state.StateName == defaultState">
+            //            {{state.StateName}}
+            //        </option>
+            //     </select>`,
             providers: [customer_service_1.CustomerService, anime_api_service_1.ApiService]
         }), 
         __metadata('design:paramtypes', [customer_service_1.CustomerService])

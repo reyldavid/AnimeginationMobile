@@ -2916,6 +2916,9 @@
     <Content Include="scripts\views\accountSettings.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\views\addressSettings.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\views\App.html">
       <SubType>Content</SubType>
     </Content>
@@ -2947,6 +2950,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\views\productsSlice.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\views\profileSettings.html">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\views\register.html">
