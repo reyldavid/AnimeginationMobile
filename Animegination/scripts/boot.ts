@@ -10,6 +10,8 @@ import {APP_BASE_HREF} from '@angular/common';
 import {LocationStrategy, HashLocationStrategy, PathLocationStrategy} from '@angular/common';
 import {AuthConfig, AuthHttp} from 'angular2-jwt';
 import {Globals} from './services/globals';
+//import 'intl/index';
+//import 'intl/locale-data/jsonp/en.js';
 
 bootstrap(
     AppComponent,

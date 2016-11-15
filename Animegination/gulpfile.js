@@ -7,6 +7,7 @@ Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
 var gulp = require('gulp');
 var del = require('del');
 var dest = require('gulp-dest');
+var rename = require('gulp-rename');
 
 function getPaths() {
     return {
@@ -63,6 +64,42 @@ var paths = {
 gulp.task('default', function () {
     // place code for your default task here
 });
+
+gulp.task('copyIOS', function (done) {
+
+    gulp.src('scripts/views/ios/*.html')
+        .pipe(gulp.dest('scripts/views'));
+
+    gulp.src('scripts/helpers/ios/*.rld')
+        .pipe(rename({
+            extname: '.ts'
+        }))
+        .pipe(gulp.dest('scripts/helpers'));
+});
+
+gulp.task('copyWeb', function (done) {
+
+    gulp.src('scripts/views/web/*.html')
+        .pipe(gulp.dest('scripts/views'));
+
+    gulp.src('scripts/helpers/web/*.rld')
+        .pipe(rename({
+            extname: '.ts'
+        }))
+        .pipe(gulp.dest('scripts/helpers'));
+})
+
+gulp.task('copyDroid', function (done) {
+
+    gulp.src('scripts/views/droid/*.html')
+        .pipe(gulp.dest('scripts/views'));
+
+    gulp.src('scripts/helpers/droid/*.rld')
+        .pipe(rename({
+            extname: '.ts'
+        }))
+        .pipe(gulp.dest('scripts/helpers'));
+})
 
 gulp.task('copyToLibs', function (done) {
 

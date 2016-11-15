@@ -8,8 +8,6 @@ export class LoginService {
     }
 
     public login(firstName: string): void {
-        console.log('aya firstName emit: ' + firstName);
-
         this.userLoggedIn.emit(firstName);
     }
 }

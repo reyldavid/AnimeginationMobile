@@ -5,7 +5,6 @@ var LoginService = (function () {
         this.userLoggedIn = new core_1.EventEmitter();
     }
     LoginService.prototype.login = function (firstName) {
-        console.log('aya firstName emit: ' + firstName);
         this.userLoggedIn.emit(firstName);
     };
     return LoginService;

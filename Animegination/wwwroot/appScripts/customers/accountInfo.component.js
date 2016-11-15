@@ -77,13 +77,9 @@ var AccountInfoComponent = (function () {
         this.recentPurchases = 'You Don\'t Have Any Purchases In Your Account Right Now';
         this.missingAddressBook = 'We have no default address on file for this account';
         this.incompleteAddressBook = "The default address on file is incomplete";
-        //this.userFullName = 'Aya Ueto';
-        //this.userEmail = 'ayaueto@anime.com';
-        //this.userPhone = '(925)984-2849';
         this._customerService.getUser(this.token)
             .then(function (userAccount) {
             _this.userAccount = userAccount;
-            console.log('aya login firstName: ' + userAccount.FirstName);
             _this._loginService.login(userAccount.FirstName);
         })
             .catch(function (error) {

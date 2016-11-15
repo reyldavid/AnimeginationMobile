@@ -1,4 +1,4 @@
-﻿<div class="row">
+<div class="row">
     <div class="col-sm-12 col-md-5 col-md-offset-1">
         <div class="panel-body panel-default">
             <img src="https://reydavid.blob.core.windows.net/anime/{{product?.ProductCode}}.jpg"
@@ -13,15 +13,18 @@
         <table>
             <tr>
                 <td>List Price: </td>
-                <td><s>{{product?.UnitPrice | currency:'USD':true }} </s></td>
+                <!--<td><s>{{product?.UnitPrice | currency:'USD':true }} </s></td>-->
+                <td><s>{{product?.UnitPrice}} </s></td>
             </tr>
             <tr>
-                <td><strong>Your Price:</strong></td>
-                <td><strong><span class="text-danger font-size-16">{{product?.YourPrice | currency:'USD':true }} </span></strong></td>
+                <td><strong>Your Price: </strong></td>
+                <!--<td><strong><span class="text-danger font-size-16">{{product?.YourPrice | currency:'USD':true }} </span></strong></td>-->
+                <td><strong><span class="text-danger font-size-16">{{product?.YourPrice }} </span></strong></td>
             </tr>
             <tr>
                 <td>You Save: </td>
-                <td><span class="text-danger">{{product?.UnitPrice - product?.YourPrice | currency:'USD':true }} </span></td>
+                <!--<td><span class="text-danger">{{product?.UnitPrice - product?.YourPrice | currency:'USD':true }} </span></td>-->
+                <td><span class="text-danger">{{product?.UnitPrice - product?.YourPrice }} </span></td>
             </tr>
         </table>
         <div class="padding-top-15">
@@ -80,22 +83,3 @@
         <similarsList [productID]="[(product?.ProductID)]"></similarsList>
     </div>
 </div>
-
-<!--<h2>{{product.producttitle}}</h2>
-<div>Price: <strong>{{product.yourprice | currency:'USD':true }} </strong></div>
-<div>Rating: {{product.ratingid}} stars</div>
-<img src="https://reydavid.blob.core.windows.net/anime/{{product.productcode}}.jpg" alt="{{product.productcode}}" style="max-width: 300px" />
-<br />
-<br />
-<button>
-    <a href="http://www.animegination.net/Product/Details/{{product.productid}}" target="_blank">Buy in website now</a>
-</button>
-<h3>Description</h3>
-<div>{{product.productdescription}}</div>
-<h3>Product Details</h3>
-<div>Format: {{product.mediumid}}</div>
-<div>Category: {{product.categoryid}}</div>
-<div>Rated: {{product.productagerating}}</div>
-<div>Run Time: {{product.productlength}} minutes</div>
-<div>Released: {{product.productyearcreated}}</div>
-<div>Publisher: {{product.publisherid}}</div>-->

@@ -2795,6 +2795,9 @@
     <Content Include="scripts\helpers\phonePipe.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\helpers\statesDropDown-droid.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\helpers\statesDropDown.js">
       <SubType>Content</SubType>
     </Content>

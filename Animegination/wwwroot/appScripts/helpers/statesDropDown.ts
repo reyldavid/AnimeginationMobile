@@ -11,13 +11,13 @@ import { States } from '../models/states';
 
 @Component({
     selector: 'states',
-    templateUrl: '../views/statesDropDown.html', 
-    //template: 
-    //    `<select (change)="selectItem($event.target.value)" class="form-control" id="state">
-    //        <option *ngFor="#state of states" value={{state.StateID}} [selected]="state.StateName == defaultState">
-    //            {{state.StateName}}
-    //        </option>
-    //     </select>`,
+    //templateUrl: '../views/statesDropDown.html', 
+    template: 
+        `<select (change)="selectItem($event.target.value)" class="form-control" id="state">
+            <option *ngFor="#state of states" value={{state.StateID}} [selected]="state.StateName == defaultState">
+                {{state.StateName}}
+            </option>
+         </select>`,
     providers: [CustomerService, ApiService]
 })
 export class StatesDropDownComponent implements OnInit {

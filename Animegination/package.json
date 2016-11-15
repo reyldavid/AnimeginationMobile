@@ -33,7 +33,8 @@
     "typescript": "^1.8.10",
     "typings": "^0.8.1",
     "del": "^2.2.0",
-    "gulp-dest": "^0.2.3"
+    "gulp-dest": "^0.2.3", 
+    "gulp-rename": "1.2.2"
   }
 }
 

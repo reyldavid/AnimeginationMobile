@@ -14,7 +14,6 @@ export class CustomerService {
     }
 
     userLogin(username: string, password: string) {
-        console.log('user login username: ' + username + '  password: ' + password);
         return new Promise( (resolve, reject) => {
             this._apiService.userLogin(username, password)
                 .subscribe(

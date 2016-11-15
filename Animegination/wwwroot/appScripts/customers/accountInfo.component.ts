@@ -35,9 +35,6 @@ export class AccountInfoComponent implements OnInit {
     recentPurchases: string;
     missingAddressBook: string;
     incompleteAddressBook: string;
-    userFullName: string;
-    userEmail: string;
-    userPhone: string;
 
     constructor(public router: Router, public http: Http,
         public authHttp: AuthHttp,
@@ -95,16 +92,10 @@ export class AccountInfoComponent implements OnInit {
         this.recentPurchases = 'You Don\'t Have Any Purchases In Your Account Right Now';
         this.missingAddressBook = 'We have no default address on file for this account';
         this.incompleteAddressBook = "The default address on file is incomplete";
-        //this.userFullName = 'Aya Ueto';
-        //this.userEmail = 'ayaueto@anime.com';
-        //this.userPhone = '(925)984-2849';
 
         this._customerService.getUser(this.token)
             .then((userAccount: UserAccountModel) => {
                 this.userAccount = userAccount;
-
-                console.log('aya login firstName: ' + userAccount.FirstName);
-
                 this._loginService.login(userAccount.FirstName);
             })
             .catch((error: string) => {

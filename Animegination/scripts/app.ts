@@ -79,8 +79,6 @@ export class AppComponent implements OnInit {
     }
 
     onUserLogin(userFirstName: string) {
-        console.log('aya onUserLogin: ' + userFirstName);
-
         this.userFirstName = userFirstName;
     }
 

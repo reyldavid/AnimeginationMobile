@@ -11,6 +11,8 @@ var common_2 = require('@angular/common');
 var common_3 = require('@angular/common');
 var angular2_jwt_1 = require('angular2-jwt');
 var globals_1 = require('./services/globals');
+//import 'intl/index';
+//import 'intl/locale-data/jsonp/en.js';
 platform_browser_dynamic_1.bootstrap(app_1.AppComponent, [
     common_1.FORM_PROVIDERS,
     router_deprecated_1.ROUTER_PROVIDERS,

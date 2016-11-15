@@ -53,7 +53,6 @@ var AppComponent = (function () {
         this._router.navigate(['Search', { searchText: searchText }]);
     };
     AppComponent.prototype.onUserLogin = function (userFirstName) {
-        console.log('aya onUserLogin: ' + userFirstName);
         this.userFirstName = userFirstName;
     };
     AppComponent.prototype.logout = function () {
