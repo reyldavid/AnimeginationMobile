@@ -2777,6 +2777,9 @@
     <Content Include="scripts\customers\addressSettings.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\customers\cartItem.component.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\customers\contactUs.component.js" />
     <Content Include="scripts\customers\login.component.js" />
     <Content Include="scripts\customers\newsFeed.component.js" />
@@ -2798,11 +2801,17 @@
     <Content Include="scripts\helpers\statesDropDown-droid.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\helpers\statesDropDown-web.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\helpers\statesDropDown.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\index.js" />
     <Content Include="scripts\models\addressModel.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\models\cartItemModel.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\models\category.js" />
@@ -2864,6 +2873,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="scripts\products\views\App.html" />
+    <Content Include="scripts\products\views\cartItem.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\products\views\categories.html" />
     <Content Include="scripts\products\views\categoryList.html">
       <SubType>Content</SubType>
@@ -2925,6 +2937,9 @@
     <Content Include="scripts\views\App.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\views\cartItem.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\views\categories.html">
       <SubType>Content</SubType>
     </Content>
@@ -2978,6 +2993,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="views\App.html" />
+    <Content Include="views\cartItem.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\categories.html" />
     <Content Include="views\categoryList.html">
       <SubType>Content</SubType>

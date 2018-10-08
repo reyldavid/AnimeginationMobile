@@ -1,0 +1,15 @@
+<h2>Genres</h2>
+<ul class="list-inline">
+    <li *ngFor="let category of categories"
+        (click)="OnSelectCategory(category)">
+        <a>
+            <div class="thumbnail" style="max-width: 160px;">
+                <img src="https://reydavid.blob.core.windows.net/genres/{{category?.ImageFile}}"
+                     alt="{{category?.CategoryName}}" style="max-width: 130px" />
+                <div class="caption">
+                    <div>{{category?.Description}}</div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>

@@ -11,6 +11,8 @@ import {LoginModel} from '../models/loginmodel';
 import {UserReturnModel} from '../models/userReturnModel';
 import {UserAccountModel} from '../models/userAccountModel';
 import {States} from '../models/states';
+import {CartItem} from '../models/cartItemModel';
+import {Order} from '../models/orderModel';
 import {contentHeaders} from '../services/headers';
 import {Globals} from './globals';
 import 'rxjs/Rx';
@@ -236,5 +238,29 @@ export class ApiService {
             .catch(this.handleError);
 
         return result;
+    }
+
+    getCartItems(token: TokenModel, cartType: string): Observable<CartItem[]> {
+
+        contentHeaders.set("JWTToken", token.token);
+
+        var result = this._http.get(this._globals.azureHostUrl + "cartitems/" + cartType,
+            { headers: contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+
+        return result;
+    }
+
+    getOrderTotals(token: TokenModel, cartType: string): Observable<Order[]> {
+
+        contentHeaders.set("JWTToken", token.token);
+
+        var result = this._http.get(this._globals.azureHostUrl + "orders/" + cartType,
+            { headers: contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+
+        return result;        
     }
 }

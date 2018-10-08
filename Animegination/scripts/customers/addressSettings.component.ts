@@ -44,7 +44,8 @@ export class AddressSettingsComponent implements OnInit {
         public http: Http,
         private _customerService: CustomerService,
         private _apiService: ApiService,
-        private _formBuilder: FormBuilder) {
+        private _formBuilder: FormBuilder)
+    {
         this.token.token = localStorage.getItem('jwt');
     }
 

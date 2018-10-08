@@ -162,6 +162,20 @@ var ApiService = (function () {
             .catch(this.handleError);
         return result;
     };
+    ApiService.prototype.getCartItems = function (token, cartType) {
+        headers_1.contentHeaders.set("JWTToken", token.token);
+        var result = this._http.get(this._globals.azureHostUrl + "cartitems/" + cartType, { headers: headers_1.contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+        return result;
+    };
+    ApiService.prototype.getOrderTotals = function (token, cartType) {
+        headers_1.contentHeaders.set("JWTToken", token.token);
+        var result = this._http.get(this._globals.azureHostUrl + "orders/" + cartType, { headers: headers_1.contentHeaders })
+            .map(this.extractData)
+            .catch(this.handleError);
+        return result;
+    };
     ApiService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http, globals_1.Globals])

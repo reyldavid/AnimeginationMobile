@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-sm-12">
+        <hr />
+    </div>
+    <div class="col-sm-12 col-md-7">
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-1">
+                <div class="panel-body panel-default" (click)="selectProduct(product?.productID)">
+                    <img src="https://reydavid.blob.core.windows.net/anime/{{product?.productCode}}.jpg" 
+                         alt="{{product?.productCode}}" class="img-responsive small-screen-image" />
+                </div>
+            </div>
+            <div class="col-sm-8 wide-screen-top-padding">
+                <h4>{{product?.productTitle}}</h4>
+                <div>{{product?.mediumName}}</div>
+                <img src="https://reydavid.blob.core.windows.net/assets/Rating {{product?.ratingID}} Stars.png"
+                     alt="{{product?.ratingID}} stars" class="img-responsive" />
+                <div class="fine-print padding-top-8">In Stock</div>
+                <div class="small-gray padding-bottom-8">Item: {{product?.productCode}}</div>
+                <div>
+                    <button type="button" class="btn btn-link" (click)="deleteProduct(product?.productID)">Delete</button>
+                    |
+                    <button type="button" class="btn btn-link" (click)="wishProduct(product?.productID)">Save for later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-5">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 col-md-6 col-md-offset-0 right">
+                <span class="small-screen-only">Your Price: </span><strong class="text-danger font-size-20">{{product?.yourPrice | currency:'USD':true }}</strong>
+            </div>
+            <div class="col-sm-5 col-md-5 right">
+                <span class="small-screen-only">Quantity: </span><input type="number" min="0" max="10" step="1" value="{{product?.quantity}}" class="font-size-18" />
+            </div>
+        </div>
+    </div>
+</div>

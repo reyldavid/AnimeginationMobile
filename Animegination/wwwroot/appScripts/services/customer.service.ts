@@ -6,6 +6,9 @@ import { LoginModel } from '../models/loginmodel';
 import { UserReturnModel } from '../models/userReturnModel';
 import { UserAccountModel } from '../models/userAccountModel';
 import { States } from '../models/states';
+import { ApiProduct } from '../models/product';
+import { CartItem } from '../models/cartItemModel';
+import { Order } from '../models/orderModel';
 
 @Injectable()
 export class CustomerService {
@@ -147,4 +150,33 @@ export class CustomerService {
         });
     }
 
+    getCartItems(token: TokenModel, cartType: string) {
+        return new Promise((resolve, reject) => {
+            this._apiService.getCartItems(token, cartType)
+                .subscribe(
+                (data: CartItem[]) => {
+                    resolve(data);
+                    console.log('aya cartitems: ');
+                    console.log(data);
+                },
+                error => { console.log('get cart items: ' + error); reject(error); },
+                () => console.log("Api Get Cart Items seikoo")
+                );
+        })
+    }
+
+    getOrderTotals(token: TokenModel, cartType: string) {
+        return new Promise((resolve, reject) => {
+            this._apiService.getOrderTotals(token, cartType)
+                .subscribe(
+                (data: Order[]) => {
+                    resolve(data);
+                    console.log('aya orders: ');
+                    console.log(data);
+                },
+                error => { console.log('get order totals: ' + error); reject(error); },
+                () => console.log("Api Get Order Totals seikoo")
+                );
+        })
+    }
 }
